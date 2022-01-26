@@ -1,0 +1,1843 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/style/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/style/style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <title>فروشگاه</title>
+</head>
+
+<body class="rtl">
+    <!-- start header & navbar -->
+    <header class="container-fluid bg-custom-nav">
+        <div class="row">
+            <div class="container">
+                <div class="row justify-content-md-center">
+                    <div class="col-sm-12 col-md-6 d-none d-lg-flex align-items-center">
+                        <p class="text-white custom-navbar">ارسال رایگان - ضمانت بازگشت وجه 30 روزه</p>
+                    </div>
+                    <div class="col-sm-12 col-md-6 d-flex align-items-center justify-content-center">
+                        <ul class="nav custom-navbar d-md-flex justify-content-center">
+                            <li class="nav-item">
+                                <a class="nav-link text-decoration-none text-light border-left d-none d-xl-block" href="#">آدرس فروشگاه</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-decoration-none text-light border-left" href="#">پیگیری سفارشات</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-decoration-none text-light border-left" href="#">تلفن : 09121212122</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-decoration-none text-light d-none d-xl-block" href="#">ضمانت کیفیت محصول</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="container my-5">
+                <div class="row">
+                    <!-- <div class="col-sm-12 col-md-2"></div> -->
+                    <div class="col-sm-12 col-md-9">
+                        <div class="input-group">
+                            <div class="input-group-append">
+                                <button class="btn btn-secondary dropdown-toggle rounded-right custom-search-font" type="button" data-toggle="dropdown" aria-expanded="false">دسته بندی ها &nbsp;</button>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="#">لوازم منزل</a>
+                                    <a class="dropdown-item" href="#">لوازم برقی</a>
+                                    <a class="dropdown-item" href="#">کامپیوتر و تجهیزات</a>
+                                    <a class="dropdown-item" href="#">لوازم خودرو</a>
+                                </div>
+                            </div>
+                            <input type="text" class="form-control" id="search" placeholder="جستجو بین کالاها" aria-label="Text input with dropdown button">
+                            <div class="input-group-prepend">
+                                <button class="btn btn-success rounded-left" type="button"><i class="fas fa-search"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-3 mt-csm-3 d-flex justify-content-center align-items-center">
+                        <div class="dropdown shopCard">
+                            <button class="btn btn-sm text-white position-relative border-0 dropdown-toggle shopCard-fontSize custom-ShopCard-Shadow" type="button" id="dropdownMenuButton" data-toggle="dropdown" data-offset="0,15">
+                                <span>سبد خرید</span>&nbsp;&nbsp;&nbsp;<i class="fas fa-shopping-cart align-middle"></i>
+                                <span id="notification"></span> 
+                            </button>
+                            <div class="dropdown-menu basket-shop p-0" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item p-2 d-flex justify-content-around" href="#">
+                                    <img class="img-thumbnail" src="./assets/pic/Chair/269b2549ca324a9e4303c712b666043e6aa5590d_1607798186.jpg" alt="gaming-Chair">
+                                    <div class="text-right d-flex flex-column align-items-center">
+                                        <small>صندلی اداری</small>
+                                        <small>صندلی گیمینگ بامو مدل dxr12122020</small>
+                                        <small>۵,۷۵۰,۰۰۰ تـومـان</small>
+                                    </div>
+                                </a>
+                                <a class="dropdown-item p-2 d-flex justify-content-around" href="#">
+                                    <img class="img-thumbnail" src="./assets/pic/HeadPhone/0b306cd2aab4efbcd98beffd82e58db48a86be95_1634113398.jpg" alt="gaming-Chair">
+                                    <div class="text-right d-flex flex-column align-items-center">
+                                        <small>هدفون، هدست و هندزفری</small>
+                                        <small>هدفون مخصوص بازی ایکس او مدل GE-04</small>
+                                        <small>۶۹۵,۰۰۰ تـومـان</small>
+                                    </div>
+                                </a>
+                                <a class="dropdown-item p-2 d-flex justify-content-around w-100" href="#">
+                                    <img class="img-thumbnail" src="./assets/pic/AllInOne/568f71dda707d6a97182cc3673a48238555f45bb_1623307625.jpg" alt="gaming-Chair">
+                                    <div class="text-right d-flex flex-column align-items-center">
+                                        <small>کامپیوترهای All-in-One</small>
+                                        <small>کامپیوتر همه کاره مدل PRO 24X 10M-A</small>
+                                        <small>۱۹,۶۵۰,۰۰۰ تـومـان</small>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <nav class="w-100 position-relative">
+                <div class="container">
+                    <div class="row justify-content-around text-right">
+                        <nav class="navbar navbar-expand-lg navbar-dark w-100">
+                            <a class="navbar-brand overflow-hidden" href="/index.html">
+                                <i class="fas fa-shopping-bag"></i>
+                            </a>
+                            <button class="navbar-toggler custom-navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                              <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <ul class="navbar-nav">
+                                    <li class="nav-item custom-btn-menu mr-3">
+                                        <a class="nav-link custom-megaMenu-font" href="/index.html">خانه</a>
+                                    </li>
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link custom-megaMenu-font dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-expanded="false">
+                                            لوازم منزل
+                                        </a>
+                                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                            <div class="container">
+                                                <div class="row w-100">
+                                                    <div class="col-sm-12 col-md-6">
+                                                        <ul class="nav flex-column megaMenu-Item">
+                                                            <li class="nav-item">
+                                                                <a class="nav-link text-dark" href="#"><i class="fas fa-angle-left align-middle"></i> ماشین لباسشویی</a>
+                                                            </li>
+                                                            <li class="nav-item">
+                                                                <a class="nav-link text-dark" href="#"><i class="fas fa-angle-left align-middle"></i> ماشین ظرفشویی</a>
+                                                            </li>
+                                                            <li class="nav-item">
+                                                                <a class="nav-link text-dark" href="#"><i class="fas fa-angle-left align-middle"></i> تلویزیون</a>
+                                                            </li>
+                                                            <li class="nav-item">
+                                                                <a class="nav-link text-dark" href="#"><i class="fas fa-angle-left align-middle"></i> جارو برقی</a>
+                                                            </li>
+                                                            <li class="nav-item">
+                                                                <a class="nav-link text-dark" href="#"><i class="fas fa-angle-left align-middle"></i> مبلمان</a>
+                                                            </li>
+                                                            <li class="nav-item">
+                                                                <a class="nav-link text-dark" href="#"><i class="fas fa-angle-left align-middle"></i> پرده</a>
+                                                            </li>
+                                                            <li class="nav-item">
+                                                                <a class="nav-link text-dark" href="#"><i class="fas fa-angle-left align-middle"></i> اتو</a>
+                                                            </li>
+                                                            <li class="nav-item">
+                                                                <a class="nav-link text-dark" href="#"><i class="fas fa-angle-left align-middle"></i> یخچال</a>
+                                                            </li>
+                                                            <li class="nav-item">
+                                                                <a class="nav-link text-dark" href="#"><i class="fas fa-angle-left align-middle"></i> کولر</a>
+                                                            </li>
+                                                            <li class="nav-item">
+                                                                <a class="nav-link text-dark" href="#"><i class="fas fa-angle-left align-middle"></i> قهوه ساز و آبمیوه گیر</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="col-sm-12 col-md-6 overflow-hidden">
+                                                        <img class="d-block w-100 h-100" src="./assets/pic/MegaMenu/صنعت-لوازم-خانگی-آماده-ورود-به-بازارهای-جهانی.jpg" alt="لازم خانگی">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link custom-megaMenu-font dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-expanded="false">
+                                            لوازم برقی
+                                        </a>
+                                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                            <div class="container">
+                                                <div class="row w-100">
+                                                    <div class="col-sm-12 col-md-6">
+                                                        <ul class="nav flex-column megaMenu-Item">
+                                                            <li class="nav-item">
+                                                                <a class="nav-link text-dark" href="#"><i class="fas fa-angle-left align-middle"></i> دریل و پیچ گوشتی شارژی</a>
+                                                            </li>
+                                                            <li class="nav-item">
+                                                                <a class="nav-link text-dark" href="#"><i class="fas fa-angle-left align-middle"></i> فرز و سنگ رو میزی</a>
+                                                            </li>
+                                                            <li class="nav-item">
+                                                                <a class="nav-link text-dark" href="#"><i class="fas fa-angle-left align-middle"></i> کارواش</a>
+                                                            </li>
+                                                            <li class="nav-item">
+                                                                <a class="nav-link text-dark" href="#"><i class="fas fa-angle-left align-middle"></i> مجموعه ابزار</a>
+                                                            </li>
+                                                            <li class="nav-item">
+                                                                <a class="nav-link text-dark" href="#"><i class="fas fa-angle-left align-middle"></i> نردبان</a>
+                                                            </li>
+                                                            <li class="nav-item">
+                                                                <a class="nav-link text-dark" href="#"><i class="fas fa-angle-left align-middle"></i> چسب صنعتی</a>
+                                                            </li>
+                                                            <li class="nav-item">
+                                                                <a class="nav-link text-dark" href="#"><i class="fas fa-angle-left align-middle"></i> رنگ</a>
+                                                            </li>
+                                                            <li class="nav-item">
+                                                                <a class="nav-link text-dark" href="#"><i class="fas fa-angle-left align-middle"></i> متر و تراز</a>
+                                                            </li>
+                                                            <li class="nav-item">
+                                                                <a class="nav-link text-dark" href="#"><i class="fas fa-angle-left align-middle"></i> موتور برق</a>
+                                                            </li>
+                                                            <li class="nav-item">
+                                                                <a class="nav-link text-dark" href="#"><i class="fas fa-angle-left align-middle"></i> مجموعه ابزار</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="col-sm-12 col-md-6 overflow-hidden">
+                                                        <img class="d-block w-100 h-100" src="./assets/pic/MegaMenu/barghisharji.jpg" alt="لازم خانگی">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link custom-megaMenu-font dropdown-toggle" href="#" id="navbarDropdown3" role="button" data-toggle="dropdown" aria-expanded="false">
+                                            کامپیوتر و تجهیزات
+                                        </a>
+                                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                            <div class="container">
+                                                <div class="row w-100">
+                                                    <div class="col-sm-12 col-md-6">
+                                                        <ul class="nav flex-column megaMenu-Item">
+                                                            <li class="nav-item">
+                                                                <a class="nav-link text-dark" href="#"><i class="fas fa-angle-left align-middle"></i> لپتاپ</a>
+                                                            </li>
+                                                            <li class="nav-item">
+                                                                <a class="nav-link text-dark" href="#"><i class="fas fa-angle-left align-middle"></i> گوشی موبایل</a>
+                                                            </li>
+                                                            <li class="nav-item">
+                                                                <a class="nav-link text-dark" href="#"><i class="fas fa-angle-left align-middle"></i> لوازم جانبی موبایل</a>
+                                                            </li>
+                                                            <li class="nav-item">
+                                                                <a class="nav-link text-dark" href="#"><i class="fas fa-angle-left align-middle"></i> هدفون و هدست</a>
+                                                            </li>
+                                                            <li class="nav-item">
+                                                                <a class="nav-link text-dark" href="#"><i class="fas fa-angle-left align-middle"></i> هارد</a>
+                                                            </li>
+                                                            <li class="nav-item">
+                                                                <a class="nav-link text-dark" href="#"><i class="fas fa-angle-left align-middle"></i> کیس اسمبل شده</a>
+                                                            </li>
+                                                            <li class="nav-item">
+                                                                <a class="nav-link text-dark" href="#"><i class="fas fa-angle-left align-middle"></i> تبلت</a>
+                                                            </li>
+                                                            <li class="nav-item">
+                                                                <a class="nav-link text-dark" href="#"><i class="fas fa-angle-left align-middle"></i> پرینتر و اسکنر</a>
+                                                            </li>
+                                                            <li class="nav-item">
+                                                                <a class="nav-link text-dark" href="#"><i class="fas fa-angle-left align-middle"></i> مودم و تجهیزات شبکه</a>
+                                                            </li>
+                                                            <li class="nav-item">
+                                                                <a class="nav-link text-dark" href="#"><i class="fas fa-angle-left align-middle"></i> پلی استیشن و ایکس باکس</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="col-sm-12 col-md-6 overflow-hidden">
+                                                        <img class="d-block w-100 h-100" src="./assets/pic/MegaMenu/Mobile-Accessories2.jpg" alt="لازم خانگی">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link custom-megaMenu-font dropdown-toggle" href="#" id="navbarDropdown4" role="button" data-toggle="dropdown" aria-expanded="false">
+                                            لوازم خودرو
+                                        </a>
+                                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                            <div class="container">
+                                                <div class="row w-100">
+                                                    <div class="col-sm-12 col-md-6">
+                                                        <ul class="nav flex-column megaMenu-Item">
+                                                            <li class="nav-item">
+                                                                <a class="nav-link text-dark" href="#"><i class="fas fa-angle-left align-middle"></i> لوازم تزِیینی</a>
+                                                            </li>
+                                                            <li class="nav-item">
+                                                                <a class="nav-link text-dark" href="#"><i class="fas fa-angle-left align-middle"></i> سیستم صوتی و تصویری</a>
+                                                            </li>
+                                                            <li class="nav-item">
+                                                                <a class="nav-link text-dark" href="#"><i class="fas fa-angle-left align-middle"></i> دیسک و صفحه کلاج</a>
+                                                            </li>
+                                                            <li class="nav-item">
+                                                                <a class="nav-link text-dark" href="#"><i class="fas fa-angle-left align-middle"></i> جلو بندی</a>
+                                                            </li>
+                                                            <li class="nav-item">
+                                                                <a class="nav-link text-dark" href="#"><i class="fas fa-angle-left align-middle"></i> چراغ</a>
+                                                            </li>
+                                                            <li class="nav-item">
+                                                                <a class="nav-link text-dark" href="#"><i class="fas fa-angle-left align-middle"></i> کمک فنر</a>
+                                                            </li>
+                                                            <li class="nav-item">
+                                                                <a class="nav-link text-dark" href="#"><i class="fas fa-angle-left align-middle"></i> لاستیک</a>
+                                                            </li>
+                                                            <li class="nav-item">
+                                                                <a class="nav-link text-dark" href="#"><i class="fas fa-angle-left align-middle"></i> کمپرسور و جک خودرو</a>
+                                                            </li>
+                                                            <li class="nav-item">
+                                                                <a class="nav-link text-dark" href="#"><i class="fas fa-angle-left align-middle"></i> لنت ترمز</a>
+                                                            </li>
+                                                            <li class="nav-item">
+                                                                <a class="nav-link text-dark" href="#"><i class="fas fa-angle-left align-middle"></i> روغن موتور و ضدیخ</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="col-sm-12 col-md-6">
+                                                        <img class="d-block w-100 img-fluid" src="./assets/pic/MegaMenu/unnamed-ئشدعبشزفعق.png" alt="لازم خانگی">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item custom-btn-menu">
+                                        <a class="nav-link custom-megaMenu-font" href="blog/index.html">بلاگ</a>
+                                    </li>
+                                    <li class="nav-item custom-btn-menu">
+                                        <a class="nav-link custom-megaMenu-font" href="complex/index.html">آموزشگاه</a>
+                                    </li>
+                                    <li class="nav-item custom-btn-menu">
+                                        <a class="nav-link custom-megaMenu-font" href="users/index.html">لیست کاربران</a>
+                                    </li>
+                                    <li class="nav-item custom-btn-menu">
+                                        <a class="nav-link custom-megaMenu-font" href="#">درباره ما</a>
+                                    </li>
+                                    <li class="nav-item custom-btn-menu">
+                                        <a class="nav-link custom-megaMenu-font" href="Login/index.html">ورود</a>
+                                    </li>
+                                </ul>
+                                <a href="#" class="text-warning text-decoration-none weekly-discount">تخفیفات هفتگی<i class="fas fa-gift align-middle mr-1"></i></a>
+
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- end header & navbar -->
+    <!-- start slider -->
+    <div class="container mt-5 text-right" dir="rtl">
+        <div class="row">
+            <div class="col-sm-12 col-md-8 mt-csm-3">
+                <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="7"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="8"></li>
+                    </ol>
+                    <div class="carousel-inner text-right rounded mb-sm-2" dir="rtl">
+                        <div class="carousel-item active" data-interval="3000">
+                            <a href="#">
+                                <img src="./assets/pic/SliderImages/1/0736f06fd1ccb78af8a43b810fa8135507c2dc29_1638716887.jpg" class="d-block w-100" alt="...">
+                            </a>
+                        </div>
+                        <div class="carousel-item" data-interval="3000">
+                            <a href="#">
+                                <img src="./assets/pic/SliderImages/1/23ed2aaa91d86b08cbaf128221ea8391b56f1306_1638704421.jpg" class="d-block w-100" alt="...">
+                            </a>
+                        </div>
+                        <div class="carousel-item" data-interval="3000">
+                            <a href="#">
+                                <img src="./assets/pic/SliderImages/1/327cfa095a31451fc8844663f60fb0fe2098d443_1638704185.jpg" class="d-block w-100" alt="...">
+                            </a>
+                        </div>
+                        <div class="carousel-item" data-interval="3000">
+                            <a href="#">
+                                <img src="./assets/pic/SliderImages/1/40c303b86944b9adb9a7be6976e7a020f42d170d_1638704233.jpg" class="d-block w-100" alt="...">
+                            </a>
+                        </div>
+                        <div class="carousel-item" data-interval="3000">
+                            <a href="#">
+                                <img src="./assets/pic/SliderImages/1/4660f6284ac201c159ddc5061d9b0d404fbd2b60_1638704280.jpg" class="d-block w-100" alt="...">
+                            </a>
+                        </div>
+                        <div class="carousel-item" data-interval="3000">
+                            <a href="#">
+                                <img src="./assets/pic/SliderImages/1/4af0fcb36bcf6e7c4237913804ce73428b836509_1638799885.jpg" class="d-block w-100" alt="...">
+                            </a>
+                        </div>
+                        <div class="carousel-item" data-interval="3000">
+                            <a href="#">
+                                <img src="./assets/pic/SliderImages/1/55c0b05d5e9becfb16e3957b94137d29c7a27535_1638704097.jpg" class="d-block w-100" alt="...">
+                            </a>
+                        </div>
+                        <div class="carousel-item" data-interval="3000">
+                            <a href="#">
+                                <img src="./assets/pic/SliderImages/1/741bbc6c74793d1bdce318105c3c6b646e54874d_1638604832.jpg" class="d-block w-100" alt="...">
+                            </a>
+                        </div>
+                        <div class="carousel-item" data-interval="3000">
+                            <a href="#">
+                                <img src="./assets/pic/SliderImages/1/7772092abb24ac86d8edc2d9e5c143619a369ea6_1638704059.jpg" class="d-block w-100" alt="...">
+                            </a>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-target="#carouselExampleIndicators" data-slide="next">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-target="#carouselExampleIndicators" data-slide="prev">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Next</span>
+                    </button>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-2 d-none d-md-block bg-success overflow-hidden rounded">
+                <a href="#">
+                    <img src="./assets/pic/SliderImages/63494995.png" class="d-block w-100" alt="discount">
+                </a>
+            </div>
+            <div class="col-sm-12 col-md-2 d-flex flex-column justify-content-between">
+                <a href="#">
+                    <img src="./assets/pic/SliderImages/3/033ed83f14a7755dd71cf9b57d2b7b40c52ce5d1_1638360660.jpg" class="d-block w-100 rounded mb-csm-3" alt="">
+                </a>
+                <a href="#">
+                    <img src="./assets/pic/SliderImages/3/2d7e55358d12a124f7571d18d0f674ad632dd4fa_1638360507.jpg" class="d-block w-100 rounded mb-csm-3" alt="">
+                </a>
+                <a href="#">
+                    <img src="./assets/pic/SliderImages/3/4dbfce5e5f4927ad2520e34a5d7c1363e32b1c73_1638361930.jpg" class="d-block w-100 rounded" alt="">
+                </a>
+
+            </div>
+        </div>
+    </div>
+    <!-- end slider -->
+    <!-- start shiping -->
+    <div class="container mt-5">
+        <div class="row justify-content-center text-center">
+            <div class="col-sm-12 col-md-2 p-2 d-flex flex-column justify-content-even align-items-center shiping-item">
+                <i class="fas fa-shipping-fast"></i>
+                <p class="mt-3">ارسال رایگان به تمام نقاط کشور</p>
+            </div>
+            <div class="col-sm-12 col-md-2 p-2 d-flex flex-column justify-content-around align-items-center shiping-item">
+                <i class="fas fa-credit-card"></i>
+                <p class="mt-3">ارسال رایگان به تمام نقاط کشور</p>
+            </div>
+            <div class="col-sm-12 col-md-2 p-2 d-flex flex-column justify-content-around align-items-center shiping-item">
+                <i class="fas fa-hand-holding-usd"></i>
+                <p class="mt-3">ارسال رایگان به تمام نقاط کشور</p>
+            </div>
+            <div class="col-sm-12 col-md-2 p-2 d-flex flex-column justify-content-around align-items-center shiping-item">
+                <i class="fas fa-envelope-open-text"></i>
+                <p class="mt-3">ارسال رایگان به تمام نقاط کشور</p>
+            </div>
+            <div class="col-sm-12 col-md-2 p-2 d-flex flex-column justify-content-around align-items-center shiping-item">
+                <i class="fas fa-address-card"></i>
+                <p class="mt-3">ارسال رایگان به تمام نقاط کشور</p>
+            </div>
+        </div>
+    </div>
+    <!-- end shiping -->
+    <!-- start ads -->
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-sm-12 col-md-3 mb-sm-2">
+                <div>
+                    <a href="#">
+                        <img src="./assets/pic/SliderImages/5/4733b740d15e74f00d50ac92fb126911632b8053_1599385682.jpg" class="d-block w-100 rounded" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-3 mb-sm-2">
+                <div>
+                    <a href="#">
+                        <img src="./assets/pic/SliderImages/5/904db8a169ce8fdc6493e21b6948d3e32a19ae68_1626258276.jpg" class="d-block w-100 rounded" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-3 mb-sm-2">
+                <div>
+                    <a href="#">
+                        <img src="./assets/pic/SliderImages/5/956cd52f1f18f11284016c86561d53bcdcfdeedd_1612606849.jpg" class="d-block w-100 rounded" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-3 mb-sm-2">
+                <div>
+                    <a href="#">
+                        <img src="./assets/pic/SliderImages/5/b541d2011fa3d224ccf9dae714ef81d707f2edf0_1637743270.jpg" class="d-block w-100 rounded" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end ads -->
+    <!-- start category -->
+    <section class="container mt-5">
+        <div class="row no-gutters justify-content-between align-content-between align-items-center">
+            <div class="col-sm-6 col-md-3 col-lg-2">
+                <div class="category px-2 py-3 rounded">
+                    <a href="#" class="d-flex justify-content-between align-items-center text-center text-decoration-none">
+                        <span>
+                            <p>موبایل و تبلت</p>
+                            <p>1000 محصول</p>
+                        </span>
+                        <img src="./assets/pic/Category/121528930.jpg" class="d-block w-50" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-3 col-lg-2 rounded">
+                <div class="category px-2 py-3">
+                    <a href="#" class="d-flex justify-content-between align-items-center text-center text-decoration-none">
+                        <span>
+                            <p>کامپیوتر و لبتاب</p>
+                            <p>1000 محصول</p>
+                        </span>
+                        <img src="./assets/pic/Category/79f4b1e3c31fb22fa193ea1393e2cb8e8a5863cc_1605085571.jpg" class="d-block w-50" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-3 col-lg-2">
+                <div class="category px-2 py-3 rounded">
+                    <a href="#" class="d-flex justify-content-between align-items-center text-center text-decoration-none">
+                        <span>
+                            <p>مد و پوشاک</p>
+                            <p>1000 محصول</p>
+                        </span>
+                        <img src="./assets/pic/Category/116936388.jpg" class="d-block w-50" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-3 col-lg-2">
+                <div class="category px-2 py-3 rounded">
+                    <a href="#" class="d-flex justify-content-between align-items-center text-center text-decoration-none">
+                        <span>
+                            <p>بازی و سرگرمی</p>
+                            <p>1000 محصول</p>
+                        </span>
+                        <img src="./assets/pic/Category/664d3783527b060deb7d4eedb71b5ce283adc598_1611391559.jpg" class="d-block w-50" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-3 col-lg-2">
+                <div class="category px-2 py-3">
+                    <a href="#" class="d-flex justify-content-between align-items-center text-center text-decoration-none">
+                        <span>
+                            <p>کودک و نوجوان</p>
+                            <p>1000 محصول</p>
+                        </span>
+                        <img src="./assets/pic/Category/119377277.jpg" class="d-block w-50" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-3 col-lg-2">
+                <div class="category px-2 py-3">
+                    <a href="#" class="d-flex justify-content-between align-items-center text-center text-decoration-none">
+                        <span>
+                            <p>عینک آفتابی و زیورآلات</p>
+                            <p>1000 محصول</p>
+                        </span>
+                        <img src="./assets/pic/Category/60e0521504fac483726f6ac608c6a95b9f81c392_1599272526.jpg" class="d-block w-50" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-3 col-lg-2">
+                <div class="category px-2 py-3">
+                    <a href="#" class="d-flex justify-content-between align-items-center text-center text-decoration-none">
+                        <span>
+                            <p>صوتی و تصویری</p>
+                            <p>1000 محصول</p>
+                        </span>
+                        <img src="./assets/pic/Category/84e53c6e7acec8a1d75e226b5cb24cb90930f00e_1632547624.jpg" class="d-block w-50" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-3 col-lg-2">
+                <div class="category px-2 py-3">
+                    <a href="#" class="d-flex justify-content-between align-items-center text-center text-decoration-none">
+                        <span>
+                            <p>بهداشتی و آرایشی</p>
+                            <p>1000 محصول</p>
+                        </span>
+                        <img src="./assets/pic/Category/6189380f529cd725b9fb648a109d4aa2157a1d7b_1636873968.jpg" class="d-block w-50" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-3 col-lg-2">
+                <div class="category px-2 py-3">
+                    <a href="#" class="d-flex justify-content-between align-items-center text-center text-decoration-none">
+                        <span>
+                            <p>کتاب و لوازم التحریر</p>
+                            <p>1000 محصول</p>
+                        </span>
+                        <img src="./assets/pic/Category/764f998a622266982534639512ed0f7316034f8f_1623478144.jpg" class="d-block w-50" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-3 col-lg-2">
+                <div class="category px-2 py-3">
+                    <a href="#" class="d-flex justify-content-between align-items-center text-center text-decoration-none">
+                        <span>
+                            <p>آلات موسیقی</p>
+                            <p>1000 محصول</p>
+                        </span>
+                        <img src="./assets/pic/Category/114157606.jpg" class="d-block w-50" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-3 col-lg-2">
+                <div class="category px-2 py-3">
+                    <a href="#" class="d-flex justify-content-between align-items-center text-center text-decoration-none">
+                        <span>
+                            <p>تفریحی و ورزشی</p>
+                            <p>1000 محصول</p>
+                        </span>
+                        <img src="./assets/pic/Category/111657756.jpg" class="d-block w-50" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-3 col-lg-2">
+                <div class="category px-2 py-3">
+                    <a href="#" class="d-flex justify-content-between align-items-center text-center text-decoration-none">
+                        <span>
+                            <p>خانه و آشپزخانه</p>
+                            <p>1000 محصول</p>
+                        </span>
+                        <img src="./assets/pic/Category/115554952.jpg" class="d-block w-50" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end category -->
+    <!-- start Suggest -->
+    <!-- start ads2 -->
+    <div class="container mt-1">
+        <div class="row no-gutters">
+            <div class="col-sm-12 col-md-6 p-3">
+                <div>
+                    <a href="#">
+                        <img class="d-block w-100 rounded" src="./assets/pic/SliderImages/7/5a07df3e82e741074f8bf9cf7553b785430ac2a7_1594133899.jpg" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-6 p-3">
+                <div>
+                    <a href="#">
+                        <img class="d-block w-100 rounded" src="./assets/pic/SliderImages/7/f8dc3d51e8516ff32f8c8dda1c12632d1287e7bf_1594133959.jpg" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- end ads2 -->
+    <!-- start suggest -->
+    <section class="container mt-5">
+        <div class="row">
+            <div class="col-sm-12">
+                <span class="suggest-header position-absolute">پیشنهادات ویژه</span>
+                <ul class="nav nav-tabs custom-nav-tabs1" dir="ltr" id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link active" id="home-tab" data-toggle="tab" href="#fashion" role="tab" aria-controls="home" aria-selected="true">مد و پوشاک</a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link" id="profile-tab" data-toggle="tab" href="#game" role="tab" aria-controls="profile" aria-selected="false">بازی و سرگرمی</a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link" id="contact-tab" data-toggle="tab" href="#tablet" role="tab" aria-controls="contact" aria-selected="false">گوشی و تبلت</a>
+                    </li>
+                </ul>
+                <div class="tab-content custom-tab-content1" id="myTabContent">
+                    <div class="tab-pane fade show active" id="fashion" role="tabpanel" aria-labelledby="home-tab">
+                        <div class="container">
+                            <div class="row flex-sm-coloumn justify-content-bettwen">
+                                <div class="col-sm-12 col-lg-6 position-relative offer-card p-4">
+                                    <div class="rounded offer-Expired"></div>
+                                    <div class="offer-blur d-flex justify-content-center align-items-center">
+                                        <div class="offer-images">
+                                            <img class="d-block w-100 h-100" src="./assets/pic/Offers/ab782bae78d6bb82b61c4a3c6e4c4fd972280472_1605718323.jpg" alt="">
+                                            <img class="d-block w-100 h-100" src="./assets/pic/Offers/5bb7c91402dc7644364e03a0957e417cca047b21_1605718371.jpg" alt="">
+                                        </div>
+                                        <div class="offer-details text-center">
+                                            <a class="text-decoration-none" href="#">هودی مردانه مدل لبخند</a>
+                                            <div class="offer-rating mt-2 mb-2">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="far fa-star"></i>
+                                            </div>
+                                            <div class="offer-price mt-2">
+                                                <s>250000 تومان</s>
+                                                <span>150000 تومان</span>
+                                            </div>
+                                            <div class="offer-timer mt-2">
+                                                <p class="mb-3">فرصت باقی مانده تا پایان این پیشنهاد</p>
+                                                <div id="demo" dir="ltr" class="d-flex justify-content-center align-items-center demos"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-lg-6 position-relative offer-card p-4">
+
+                                    <div class="rounded offer-Expired"></div>
+                                    <div class="offer-blur d-flex justify-content-center align-items-center">
+                                        <div class="offer-images">
+                                            <img class="d-block w-100 h-100" src="./assets/pic/Offers/3e7bba5b14a5b9a8ed774a72e6b2fcff8aebd610_1600515348.jpg" alt="">
+                                            <img class="d-block w-100 h-100" src="./assets/pic/Offers/dbb0f359c5e676addf66c7505018837bd09922a1_1600515351 (1).jpg" alt="">
+                                        </div>
+                                        <div class="offer-details text-center">
+                                            <a class="text-decoration-none" href="#">پالتو مردانه </a>
+                                            <div class="offer-rating mt-2 mb-2">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="far fa-star"></i>
+                                            </div>
+                                            <div class="offer-price mt-2">
+                                                <s>640000 تومان</s>
+                                                <span>480000 تومان</span>
+                                            </div>
+                                            <div class="offer-timer mt-2">
+                                                <p class="mb-3">فرصت باقی مانده تا پایان این پیشنهاد</p>
+                                                <div id="demo" dir="ltr" class="d-flex justify-content-center align-items-center demos"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                                <div class="col-sm-12 col-lg-6 position-relative offer-card p-4">
+
+                                    <div class="rounded offer-Expired"></div>
+                                    <div class="offer-blur d-flex justify-content-center align-items-center">
+                                        <div class="offer-images">
+                                            <img class="d-block w-100 h-100" src="./assets/pic/Offers/1b7b09328f53345be5496b50e53e9def96aefa4c_1598304145.jpg" alt="">
+                                            <img class="d-block w-100 h-100" src="./assets/pic/Offers/b6576ecd385140fc8130ab9e33870cabf8f84be1_1598304265.jpg" alt="">
+                                        </div>
+                                        <div class="offer-details text-center">
+                                            <a class="text-decoration-none" href="#">کافشن مردانه کن </a>
+                                            <div class="offer-rating mt-2 mb-2">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="far fa-star"></i>
+                                            </div>
+                                            <div class="offer-price mt-2">
+                                                <s>728000 تومان</s>
+                                                <span>618000 تومان</span>
+                                            </div>
+                                            <div class="offer-timer mt-2">
+                                                <p class="mb-3">فرصت باقی مانده تا پایان این پیشنهاد</p>
+                                                <div id="demo" dir="ltr" class="d-flex justify-content-center align-items-center demos"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                                <div class="col-sm-12 col-lg-6 position-relative offer-card p-4">
+                                    <div class="rounded offer-Expired"></div>
+                                    <div class="offer-blur d-flex justify-content-center align-items-center">
+                                        <div class="offer-images">
+                                            <img class="d-block w-100 h-100" src="./assets/pic/Offers/d3dafa6a8e270096fec4aa2f6e7e5a4b6ae47f57_1629581252.jpg" alt="">
+                                            <img class="d-block w-100 h-100" src="./assets/pic/Offers/cf3dd0eca5cfc519ddad35d2df267538904df0ab_1629581284.jpg" alt="">
+                                        </div>
+                                        <div class="offer-details text-center">
+                                            <a class="text-decoration-none" href="#">تیشرت آستین بلند مردانه </a>
+                                            <div class="offer-rating mt-2 mb-2">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="far fa-star"></i>
+                                            </div>
+                                            <div class="offer-price mt-2">
+                                                <s>188000 تومان</s>
+                                                <span>139000 تومان</span>
+                                            </div>
+                                            <div class="offer-timer mt-2">
+                                                <p class="mb-3">فرصت باقی مانده تا پایان این پیشنهاد</p>
+                                                <div id="demo" dir="ltr" class="d-flex justify-content-center align-items-center demos"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="game" role="tabpanel" aria-labelledby="profile-tab">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-sm-12 col-lg-6 position-relative offer-card p-4">
+                                    <div class="rounded offer-Expired"></div>
+                                    <div class="offer-blur d-flex justify-content-center align-items-center">
+                                        <div class="offer-images">
+                                            <img class="d-block w-100 h-100" src="./assets/pic/Offers/4cfb337390d4c339c6b9e73c67c9dc87cc54fbdb_1597138601.jpg" alt="">
+                                            <img class="d-block w-100 h-100" src="./assets/pic/Offers/4604759.jpg" alt="">
+                                        </div>
+                                        <div class="offer-details text-center">
+                                            <a class="text-decoration-none" href="#">کنسول بازی سونی 4</a>
+                                            <div class="offer-rating mt-2 mb-2">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="far fa-star"></i>
+                                            </div>
+                                            <div class="offer-price mt-2">
+                                                <s>13215000 تومان</s>
+                                                <span>12895000 تومان</span>
+                                            </div>
+                                            <div class="offer-timer mt-2">
+                                                <p class="mb-3">فرصت باقی مانده تا پایان این پیشنهاد</p>
+                                                <div id="demo" dir="ltr" class="d-flex justify-content-center align-items-center demos"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-lg-6 position-relative offer-card p-4">
+                                    <div class="rounded offer-Expired"></div>
+                                    <div class="offer-blur d-flex justify-content-center align-items-center">
+                                        <div class="offer-images">
+                                            <img class="d-block w-100 h-100" src="./assets/pic/Offers/664d3783527b060deb7d4eedb71b5ce283adc598_1611391559.jpg" alt="">
+                                            <img class="d-block w-100 h-100" src="./assets/pic/Offers/fb4b45e2f6b8c57145a701904bd793e1af2f7b9b_1611391564.jpg" alt="">
+                                        </div>
+                                        <div class="offer-details text-center">
+                                            <a class="text-decoration-none" href="#">کنسول بازی سونی 5</a>
+                                            <div class="offer-rating mt-2 mb-2">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="far fa-star"></i>
+                                            </div>
+                                            <div class="offer-price mt-2">
+                                                <s>34836000 تومان</s>
+                                                <span>31769000 تومان</span>
+                                            </div>
+                                            <div class="offer-timer mt-2">
+                                                <p class="mb-3">فرصت باقی مانده تا پایان این پیشنهاد</p>
+                                                <div id="demo" dir="ltr" class="d-flex justify-content-center align-items-center demos"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-lg-6 position-relative offer-card p-4">
+                                    <div class="rounded offer-Expired"></div>
+                                    <div class="offer-blur d-flex justify-content-center align-items-center">
+                                        <div class="offer-images">
+                                            <img class="d-block w-100 h-100" src="./assets/pic/Offers/2df666aba8e4fd8ae4bd75c814b5ea1e2f076f00_1605103287.jpg" alt="">
+                                            <img class="d-block w-100 h-100" src="./assets/pic/Offers/10e8b1e22f712cf6a38a2798c96d5d6e0f5573e5_1605102843.jpg" alt="">
+                                        </div>
+                                        <div class="offer-details text-center">
+                                            <a class="text-decoration-none" href="#">کنسول بازی مایکروسافت</a>
+                                            <div class="offer-rating mt-2 mb-2">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="far fa-star"></i>
+                                            </div>
+                                            <div class="offer-price mt-2">
+                                                <s>22812000 تومان</s>
+                                                <span>20900000 تومان</span>
+                                            </div>
+                                            <div class="offer-timer mt-2">
+                                                <p class="mb-3">فرصت باقی مانده تا پایان این پیشنهاد</p>
+                                                <div id="demo" dir="ltr" class="d-flex justify-content-center align-items-center demos"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-lg-6 position-relative offer-card p-4">
+                                    <div class="rounded offer-Expired"></div>
+                                    <div class="offer-blur d-flex justify-content-center align-items-center">
+                                        <div class="offer-images">
+                                            <img class="d-block w-100 h-100" src="./assets/pic/Offers/121913714.jpg" alt="">
+                                            <img class="d-block w-100 h-100" src="./assets/pic/Offers/121994784.jpg" alt="">
+                                        </div>
+                                        <div class="offer-details text-center">
+                                            <a class="text-decoration-none" href="#">کنسول رو میزی </a>
+                                            <div class="offer-rating mt-2 mb-2">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="far fa-star"></i>
+                                            </div>
+                                            <div class="offer-price mt-2">
+                                                <s>23600000 تومان</s>
+                                                <span>21800000 تومان</span>
+                                            </div>
+                                            <div class="offer-timer mt-2">
+                                                <p class="mb-3">فرصت باقی مانده تا پایان این پیشنهاد</p>
+                                                <div id="demo" dir="ltr" class="d-flex justify-content-center align-items-center demos"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="tablet" role="tabpanel" aria-labelledby="contact-tab">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-sm-12 col-lg-6 position-relative offer-card p-4">
+                                    <div class="rounded offer-Expired"></div>
+                                    <div class="offer-blur d-flex justify-content-center align-items-center">
+                                        <div class="offer-images">
+                                            <img class="d-block w-100 h-100" src="./assets/pic/Offers/77f6b5b39b58f0b81c7707e3626f55b74ee348aa_1623857594.jpg" alt="">
+                                            <img class="d-block w-100 h-100" src="./assets/pic/Offers/7cc5d6a64fd4aba6368ea70535774f876e977dbb_1618918885.jpg" alt="">
+                                        </div>
+                                        <div class="offer-details text-center">
+                                            <a class="text-decoration-none" href="#">گوشی موبایل شیامویی poco x3</a>
+                                            <div class="offer-rating mt-2 mb-2">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="far fa-star"></i>
+                                            </div>
+                                            <div class="offer-price mt-2">
+                                                <s>6800000 تومان</s>
+                                                <span>6600000 تومان</span>
+                                            </div>
+                                            <div class="offer-timer mt-2">
+                                                <p class="mb-3">فرصت باقی مانده تا پایان این پیشنهاد</p>
+                                                <div id="demo" dir="ltr" class="d-flex justify-content-center align-items-center demos"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-lg-6 position-relative offer-card p-4">
+                                    <div class="rounded offer-Expired"></div>
+                                    <div class="offer-blur d-flex justify-content-center align-items-center">
+                                        <div class="offer-images">
+                                            <img class="d-block w-100 h-100" src="./assets/pic/Offers/1a9e53cd390a8698ec880cb29ac054645f38dcc7_1636540872.jpg" alt="">
+                                            <img class="d-block w-100 h-100" src="./assets/pic/Offers/f5000b98661d3b6338d8dd167faf94bc96e20874_1636541233.jpg" alt="">
+                                        </div>
+                                        <div class="offer-details text-center">
+                                            <a class="text-decoration-none" href="#">تبلت اپل مدل ipad</a>
+                                            <div class="offer-rating mt-2 mb-2">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="far fa-star"></i>
+                                            </div>
+                                            <div class="offer-price mt-2">
+                                                <s>17990000 تومان</s>
+                                                <span>16580000 تومان</span>
+                                            </div>
+                                            <div class="offer-timer mt-2">
+                                                <p class="mb-3">فرصت باقی مانده تا پایان این پیشنهاد</p>
+                                                <div id="demo" dir="ltr" class="d-flex justify-content-center align-items-center demos"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-lg-6 position-relative offer-card p-4">
+                                    <div class="rounded offer-Expired"></div>
+                                    <div class="offer-blur d-flex justify-content-center align-items-center">
+                                        <div class="offer-images">
+                                            <img class="d-block w-100 h-100" src="./assets/pic/Offers/7b3882bdc0ec0f967ce6c668a3cd2f88910f81c6_1604820063.jpg" alt="">
+                                            <img class="d-block w-100 h-100" src="./assets/pic/Offers/8b5e13eb67322d1d8d26f9473326354078abcf3a_1604820069.jpg" alt="">
+                                        </div>
+                                        <div class="offer-details text-center">
+                                            <a class="text-decoration-none" href="#">تبلت سامسونگ مدل tab s7</a>
+                                            <div class="offer-rating mt-2 mb-2">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="far fa-star"></i>
+                                            </div>
+                                            <div class="offer-price mt-2">
+                                                <s>33490000 تومان</s>
+                                                <span>32999000 تومان</span>
+                                            </div>
+                                            <div class="offer-timer mt-2">
+                                                <p class="mb-3">فرصت باقی مانده تا پایان این پیشنهاد</p>
+                                                <div id="demo" dir="ltr" class="d-flex justify-content-center align-items-center demos"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-lg-6 position-relative offer-card p-4">
+                                    <div class="rounded offer-Expired"></div>
+                                    <div class="offer-blur d-flex justify-content-center align-items-center">
+                                        <div class="offer-images">
+                                            <img class="d-block w-100 h-100" src="./assets/pic/Offers/15d774761e234a15c1c559ac540963baad9e229f_1631704695.jpg" alt="">
+                                            <img class="d-block w-100 h-100" src="./assets/pic/Offers/7842628f7df3e6bb4e5bcb9d710da662bdc114ec_1631704712.jpg" alt="">
+                                        </div>
+                                        <div class="offer-details text-center">
+                                            <a class="text-decoration-none" href="#">گوشی موبایل آیفون مدل iphone 13</a>
+                                            <div class="offer-rating mt-2 mb-2">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="far fa-star"></i>
+                                            </div>
+                                            <div class="offer-price mt-2">
+                                                <s>46000000 تومان</s>
+                                                <span>44499000 تومان</span>
+                                            </div>
+                                            <div class="offer-timer mt-2">
+                                                <p class="mb-3">فرصت باقی مانده تا پایان این پیشنهاد</p>
+                                                <div id="demo" dir="ltr" class="d-flex justify-content-center align-items-center demos"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end Suggest -->
+    <!-- start ads3 -->
+    <div class="container mt-1">
+        <div class="row no-gutters">
+            <div class="col-sm-12 col-md-6 p-3">
+                <div>
+                    <a href="#">
+                        <img class="d-block w-100 rounded" src="./assets/pic/SliderImages/7/4b1876324f35e7fb3598718e1f9acc52840f4005_1599295914.jpg" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-6 p-3">
+                <div>
+                    <a href="#">
+                        <img class="d-block w-100 rounded" src="./assets/pic/SliderImages/7/3986179efa1e177d41703013a93210d0b565a086_1599038291.jpg" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end ads3 -->
+    <!-- start carousel -->
+    <section class="container mt-5">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 position-relative">
+                <p class="laptop-header">لپتاپ ها</p>
+                <div class="owl-carousel bg-white mt-5">
+                    <div class="owl-carousel-item p-2">
+                        <a href="#" class="text-decoration-none">
+                            <div class="card custom-card text-center border-0">
+                                <img src="./assets/pic/LabtobImages/121530429.jpg" class="card-img-top custom-card-img-top align-self-center " alt="... ">
+                                <div class="card-body ">
+                                    <p class="card-text custom-card-text">لبتاب لنوو مدل ipad 1</p>
+                                    <p class="card-text custom-card-discount mt-2"><s class="text-danger">17,340,000 تومان</s><span class="badge badge-pill badge-danger mr-2">15%</span></p>
+                                    <p class="card-text custom-card-price mt-2">16,340,000 تومان</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="owl-carousel-item p-2">
+                        <a href="#" class="text-decoration-none">
+                            <div class="card custom-card text-center border-0">
+                                <img src="./assets/pic/LabtobImages/30c3134a3aaecf758e3eefe7e40978d596744d5b_1633256900.jpg " class="card-img-top custom-card-img-top align-self-center " alt="... ">
+                                <div class="card-body ">
+                                    <p class="card-text custom-card-text">لبتاب لنوو مدل ipad 1</p>
+                                    <p class="card-text custom-card-discount mt-2"><s class="text-danger">17,340,000 تومان</s><span class="badge badge-pill badge-danger mr-2">15%</span></p>
+                                    <p class="card-text custom-card-price mt-2">16,340,000 تومان</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="owl-carousel-item p-2">
+                        <a href="#" class="text-decoration-none">
+                            <div class="card custom-card text-center border-0">
+                                <img src="./assets/pic/LabtobImages/164f44759bf3275005fd03d14385501ac74c0b76_1637144053.jpg" class="card-img-top custom-card-img-top align-self-center " alt="... ">
+                                <div class="card-body ">
+                                    <p class="card-text custom-card-text">لبتاب لنوو مدل ipad 1</p>
+                                    <p class="card-text custom-card-discount mt-2"><s class="text-danger">17,340,000 تومان</s><span class="badge badge-pill badge-danger mr-2">15%</span></p>
+                                    <p class="card-text custom-card-price mt-2">16,340,000 تومان</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="owl-carousel-item p-2">
+                        <a href="#" class="text-decoration-none">
+                            <div class="card custom-card text-center border-0">
+                                <img src="./assets/pic/LabtobImages/123f8560637d5909f1437a67b06372b24ab42ea4_1629013326.jpg" class="card-img-top custom-card-img-top align-self-center " alt="... ">
+                                <div class="card-body ">
+                                    <p class="card-text custom-card-text">لبتاب لنوو مدل ipad 1</p>
+                                    <p class="card-text custom-card-discount mt-2"><s class="text-danger">17,340,000 تومان</s><span class="badge badge-pill badge-danger mr-2">15%</span></p>
+                                    <p class="card-text custom-card-price mt-2">16,340,000 تومان</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="owl-carousel-item p-2">
+                        <a href="#" class="text-decoration-none">
+                            <div class="card custom-card text-center border-0">
+                                <img src="./assets/pic/LabtobImages/4a4f7d3c1fcaeefa6fd3d94b1dc427e613b62050_1627809875.jpg" class="card-img-top custom-card-img-top align-self-center " alt="... ">
+                                <div class="card-body ">
+                                    <p class="card-text custom-card-text">لبتاب لنوو مدل ipad 1</p>
+                                    <p class="card-text custom-card-discount mt-2"><s class="text-danger">17,340,000 تومان</s><span class="badge badge-pill badge-danger mr-2">15%</span></p>
+                                    <p class="card-text custom-card-price mt-2">16,340,000 تومان</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="owl-carousel-item p-2">
+                        <a href="#" class="text-decoration-none">
+                            <div class="card custom-card text-center border-0">
+                                <img src="./assets/pic/LabtobImages/724061170457d16a07e162249dc1e6ec7c768fdf_1631216123.jpg" class="card-img-top custom-card-img-top align-self-center " alt="... ">
+                                <div class="card-body ">
+                                    <p class="card-text custom-card-text">لبتاب لنوو مدل ipad 1</p>
+                                    <p class="card-text custom-card-discount mt-2"><s class="text-danger">17,340,000 تومان</s><span class="badge badge-pill badge-danger mr-2">15%</span></p>
+                                    <p class="card-text custom-card-price mt-2">16,340,000 تومان</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="owl-carousel-item p-2">
+                        <a href="#" class="text-decoration-none">
+                            <div class="card custom-card text-center border-0">
+                                <img src="./assets/pic/LabtobImages/79f4b1e3c31fb22fa193ea1393e2cb8e8a5863cc_1605101706.jpg " class="card-img-top custom-card-img-top align-self-center " alt="... ">
+                                <div class="card-body ">
+                                    <p class="card-text custom-card-text">لبتاب لنوو مدل ipad 1</p>
+                                    <p class="card-text custom-card-discount mt-2"><s class="text-danger">17,340,000 تومان</s><span class="badge badge-pill badge-danger mr-2">15%</span></p>
+                                    <p class="card-text custom-card-price mt-2">16,340,000 تومان</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="owl-carousel-item p-2">
+                        <a href="#" class="text-decoration-none">
+                            <div class="card custom-card text-center border-0">
+                                <img src="./assets/pic/LabtobImages/8f6d8ce6f757dc8b56611849fbb86adb76930b68_1629873349.jpg" class="card-img-top custom-card-img-top align-self-center " alt="... ">
+                                <div class="card-body ">
+                                    <p class="card-text custom-card-text">لبتاب لنوو مدل ipad 1</p>
+                                    <p class="card-text custom-card-discount mt-2"><s class="text-danger">17,340,000 تومان</s><span class="badge badge-pill badge-danger mr-2">15%</span></p>
+                                    <p class="card-text custom-card-price mt-2">16,340,000 تومان</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="owl-carousel-item p-2">
+                        <a href="#" class="text-decoration-none">
+                            <div class="card custom-card text-center border-0">
+                                <img src="./assets/pic/LabtobImages/983658954f38728c532c78ed172ac4348657e81e_1600493866.jpg" class="card-img-top custom-card-img-top align-self-center " alt="... ">
+                                <div class="card-body ">
+                                    <p class="card-text custom-card-text">لبتاب لنوو مدل ipad 1</p>
+                                    <p class="card-text custom-card-discount mt-2"><s class="text-danger">17,340,000 تومان</s><span class="badge badge-pill badge-danger mr-2">15%</span></p>
+                                    <p class="card-text custom-card-price mt-2">16,340,000 تومان</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="owl-carousel-item p-2">
+                        <a href="#" class="text-decoration-none">
+                            <div class="card custom-card text-center border-0">
+                                <img src="./assets/pic/LabtobImages/a1bdb5d6088578f450c9841863eb8edabf2eb6f7_1630224483.jpg " class="card-img-top custom-card-img-top align-self-center " alt="... ">
+                                <div class="card-body ">
+                                    <p class="card-text custom-card-text">لبتاب لنوو مدل ipad 1</p>
+                                    <p class="card-text custom-card-discount mt-2"><s class="text-danger">17,340,000 تومان</s><span class="badge badge-pill badge-danger mr-2">15%</span></p>
+                                    <p class="card-text custom-card-price mt-2">16,340,000 تومان</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="owl-carousel-item p-2">
+                        <a href="#" class="text-decoration-none">
+                            <div class="card custom-card text-center border-0">
+                                <img src="./assets/pic/LabtobImages/a661407ac052076e454f1cc5658a60c05e483bfa_1635938672.jpg " class="card-img-top custom-card-img-top align-self-center " alt="... ">
+                                <div class="card-body ">
+                                    <p class="card-text custom-card-text">لبتاب لنوو مدل ipad 1</p>
+                                    <p class="card-text custom-card-discount mt-2"><s class="text-danger">17,340,000 تومان</s><span class="badge badge-pill badge-danger mr-2">15%</span></p>
+                                    <p class="card-text custom-card-price mt-2">16,340,000 تومان</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="owl-carousel-item p-2">
+                        <a href="#" class="text-decoration-none">
+                            <div class="card custom-card text-center border-0">
+                                <img src="./assets/pic/LabtobImages/aa71b72711dc3ba9939525abe3e8905be1ebb6cc_1636972133.jpg" class="card-img-top custom-card-img-top align-self-center " alt="... ">
+                                <div class="card-body ">
+                                    <p class="card-text custom-card-text">لبتاب لنوو مدل ipad 1</p>
+                                    <p class="card-text custom-card-discount mt-2"><s class="text-danger">17,340,000 تومان</s><span class="badge badge-pill badge-danger mr-2">15%</span></p>
+                                    <p class="card-text custom-card-price mt-2">16,340,000 تومان</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="owl-carousel-item p-2">
+                        <a href="#" class="text-decoration-none">
+                            <div class="card custom-card text-center border-0">
+                                <img src="./assets/pic/LabtobImages/b7ec274a22f920647708d6f488ba0b878a5f69c1_1625309237.jpg" class="card-img-top custom-card-img-top align-self-center " alt="... ">
+                                <div class="card-body ">
+                                    <p class="card-text custom-card-text">لبتاب لنوو مدل ipad 1</p>
+                                    <p class="card-text custom-card-discount mt-2"><s class="text-danger">17,340,000 تومان</s><span class="badge badge-pill badge-danger mr-2">15%</span></p>
+                                    <p class="card-text custom-card-price mt-2">16,340,000 تومان</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="owl-carousel-item p-2">
+                        <a href="#" class="text-decoration-none">
+                            <div class="card custom-card text-center border-0">
+                                <img src="./assets/pic/LabtobImages/b94515b66c76af42180034d018441a2a03e13129_1634022220.jpg" class="card-img-top custom-card-img-top align-self-center " alt="... ">
+                                <div class="card-body ">
+                                    <p class="card-text custom-card-text">لبتاب لنوو مدل ipad 1</p>
+                                    <p class="card-text custom-card-discount mt-2"><s class="text-danger">17,340,000 تومان</s><span class="badge badge-pill badge-danger mr-2">15%</span></p>
+                                    <p class="card-text custom-card-price mt-2">16,340,000 تومان</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="owl-carousel-item p-2">
+                        <a href="#" class="text-decoration-none">
+                            <div class="card custom-card text-center border-0">
+                                <img src="./assets/pic/LabtobImages/eb5bfd2ff5a3720ea83a403a90dacee37eef4103_1635938379.jpg " class="card-img-top custom-card-img-top align-self-center " alt="... ">
+                                <div class="card-body ">
+                                    <p class="card-text custom-card-text">لبتاب لنوو مدل ipad 1</p>
+                                    <p class="card-text custom-card-discount mt-2"><s class="text-danger">17,340,000 تومان</s><span class="badge badge-pill badge-danger mr-2">15%</span></p>
+                                    <p class="card-text custom-card-price mt-2">16,340,000 تومان</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="owl-carousel-item p-2">
+                        <a href="#" class="text-decoration-none">
+                            <div class="card custom-card text-center border-0">
+                                <img src="./assets/pic/LabtobImages/ee1a4f2bea2910ccae465f915291d884e5f160b8_1633259979.jpg" class="card-img-top custom-card-img-top align-self-center " alt="... ">
+                                <div class="card-body ">
+                                    <p class="card-text custom-card-text">لبتاب لنوو مدل ipad 1</p>
+                                    <p class="card-text custom-card-discount mt-2"><s class="text-danger">17,340,000 تومان</s><span class="badge badge-pill badge-danger mr-2">15%</span></p>
+                                    <p class="card-text custom-card-price mt-2">16,340,000 تومان</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="owl-carousel-item p-2">
+                        <a href="#" class="text-decoration-none">
+                            <div class="card custom-card text-center border-0">
+                                <img src="./assets/pic/LabtobImages/f20983595d07cb4d0c6e5dfd75d378753d81af6b_1633774089.jpg " class="card-img-top custom-card-img-top align-self-center " alt="... ">
+                                <div class="card-body ">
+                                    <p class="card-text custom-card-text">لبتاب لنوو مدل ipad 1</p>
+                                    <p class="card-text custom-card-discount mt-2"><s class="text-danger">17,340,000 تومان</s><span class="badge badge-pill badge-danger mr-2">15%</span></p>
+                                    <p class="card-text custom-card-price mt-2">16,340,000 تومان</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="owl-carousel-item p-2">
+                        <a href="#" class="text-decoration-none">
+                            <div class="card custom-card text-center border-0">
+                                <img src="./assets/pic/LabtobImages/fb5ac01262f2b1988fa8eeb29f966e81583b3969_1605620114.jpg" class="card-img-top custom-card-img-top align-self-center " alt="... ">
+                                <div class="card-body ">
+                                    <p class="card-text custom-card-text">لبتاب لنوو مدل ipad 1</p>
+                                    <p class="card-text custom-card-discount mt-2"><s class="text-danger">17,340,000 تومان</s><span class="badge badge-pill badge-danger mr-2">15%</span></p>
+                                    <p class="card-text custom-card-price mt-2">16,340,000 تومان</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end carousel -->
+    <!-- start ads4 -->
+    <div class="container mt-1">
+        <div class="row no-gutters">
+            <div class="col-sm-12 col-md-3 p-2 overflow-hidden">
+                <a href="#">
+                    <img class="d-block w-100 rounded ads-product" src="./assets/pic/SliderImages/7/5811f14711ef4ed9b506811607d36166f16e97be_1600078781.jpg" alt="">
+                </a>
+            </div>
+            <div class="col-sm-12 col-md-3 p-2 overflow-hidden">
+                <a href="#">
+                    <img class="d-block w-100 rounded ads-product" src="./assets/pic/SliderImages/7/6ae9e4c9ee1b8453eb7ad1cdafdabbb87ff0f6c0_1600078616.jpg" alt="">
+                </a>
+            </div>
+            <div class="col-sm-12 col-md-3 p-2 overflow-hidden">
+                <a href="#">
+                    <img class="d-block w-100 rounded ads-product" src="./assets/pic/SliderImages/7/f9ec15f0351671b845704e6e38d7e4d44ec5f062_1606199440.jpg" alt="">
+                </a>
+            </div>
+            <div class="col-sm-12 col-md-3 p-2 overflow-hidden">
+                <a href="#">
+                    <img class="d-block w-100 rounded ads-product" src="./assets/pic/SliderImages/7/f782ee6441f0d6e66ed4cb27f1e025ba1b83215e_1600078825.jpg" alt="">
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- ends ads4 -->
+    <!-- start carousel -->
+    <section class="container mt-5">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 position-relative">
+                <p class="laptop-header">گوشی موبایل</p>
+                <div class="owl-carousel bg-white mt-5">
+                    <div class="owl-carousel-item p-2">
+                        <a href="#" class="text-decoration-none">
+                            <div class="card custom-card text-center border-0">
+                                <img src="./assets/pic/PhoneImages/0ca836dc8142c065747aa86a9899347631a5b9e5_1608382853.jpg" class="card-img-top custom-card-img-top align-self-center " alt="... ">
+                                <div class="card-body ">
+                                    <p class="card-text custom-card-text">گوشی موبایل مدل A30</p>
+                                    <p class="card-text custom-card-discount mt-2"><s class="text-danger">17,340,000 تومان</s><span class="badge badge-pill badge-danger mr-2">15%</span></p>
+                                    <p class="card-text custom-card-price mt-2">16,340,000 تومان</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="owl-carousel-item p-2">
+                        <a href="#" class="text-decoration-none">
+                            <div class="card custom-card text-center border-0">
+                                <img src="./assets/pic/PhoneImages/15d774761e234a15c1c559ac540963baad9e229f_1634390421.jpg" class="card-img-top custom-card-img-top align-self-center " alt="... ">
+                                <div class="card-body ">
+                                    <p class="card-text custom-card-text">گوشی موبایل مدل A30</p>
+                                    <p class="card-text custom-card-discount mt-2"><s class="text-danger">17,340,000 تومان</s><span class="badge badge-pill badge-danger mr-2">15%</span></p>
+                                    <p class="card-text custom-card-price mt-2">16,340,000 تومان</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="owl-carousel-item p-2">
+                        <a href="#" class="text-decoration-none">
+                            <div class="card custom-card text-center border-0">
+                                <img src="./assets/pic/PhoneImages/1aaa7ff34f7bec773c4baea959b652ed5dff9f30_1619597662.jpg" class="card-img-top custom-card-img-top align-self-center " alt="... ">
+                                <div class="card-body ">
+                                    <p class="card-text custom-card-text">گوشی موبایل مدل A30</p>
+                                    <p class="card-text custom-card-discount mt-2"><s class="text-danger">17,340,000 تومان</s><span class="badge badge-pill badge-danger mr-2">15%</span></p>
+                                    <p class="card-text custom-card-price mt-2">16,340,000 تومان</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="owl-carousel-item p-2">
+                        <a href="#" class="text-decoration-none">
+                            <div class="card custom-card text-center border-0">
+                                <img src="./assets/pic/PhoneImages/2c9e700be94169ab950f8a6a59194a71f4d0fe62_1631008503.jpg" class="card-img-top custom-card-img-top align-self-center " alt="... ">
+                                <div class="card-body ">
+                                    <p class="card-text custom-card-text">گوشی موبایل مدل A30</p>
+                                    <p class="card-text custom-card-discount mt-2"><s class="text-danger">17,340,000 تومان</s><span class="badge badge-pill badge-danger mr-2">15%</span></p>
+                                    <p class="card-text custom-card-price mt-2">16,340,000 تومان</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="owl-carousel-item p-2">
+                        <a href="#" class="text-decoration-none">
+                            <div class="card custom-card text-center border-0">
+                                <img src="./assets/pic/PhoneImages/2d5bb77c9e694379ec4b3c8294520b143600e638_1609831833.jpg" class="card-img-top custom-card-img-top align-self-center " alt="... ">
+                                <div class="card-body ">
+                                    <p class="card-text custom-card-text">گوشی موبایل مدل A30</p>
+                                    <p class="card-text custom-card-discount mt-2"><s class="text-danger">17,340,000 تومان</s><span class="badge badge-pill badge-danger mr-2">15%</span></p>
+                                    <p class="card-text custom-card-price mt-2">16,340,000 تومان</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="owl-carousel-item p-2">
+                        <a href="#" class="text-decoration-none">
+                            <div class="card custom-card text-center border-0">
+                                <img src="./assets/pic/PhoneImages/3049dd8c073305e494f86d2959ac679febba7467_1624253960.jpg" class="card-img-top custom-card-img-top align-self-center " alt="... ">
+                                <div class="card-body ">
+                                    <p class="card-text custom-card-text">گوشی موبایل مدل A30</p>
+                                    <p class="card-text custom-card-discount mt-2"><s class="text-danger">17,340,000 تومان</s><span class="badge badge-pill badge-danger mr-2">15%</span></p>
+                                    <p class="card-text custom-card-price mt-2">16,340,000 تومان</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="owl-carousel-item p-2">
+                        <a href="#" class="text-decoration-none">
+                            <div class="card custom-card text-center border-0">
+                                <img src="./assets/pic/PhoneImages/3049dd8c073305e494f86d2959ac679febba7467_1627981167.jpg" class="card-img-top custom-card-img-top align-self-center " alt="... ">
+                                <div class="card-body ">
+                                    <p class="card-text custom-card-text">گوشی موبایل مدل A30</p>
+                                    <p class="card-text custom-card-discount mt-2"><s class="text-danger">17,340,000 تومان</s><span class="badge badge-pill badge-danger mr-2">15%</span></p>
+                                    <p class="card-text custom-card-price mt-2">16,340,000 تومان</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="owl-carousel-item p-2">
+                        <a href="#" class="text-decoration-none">
+                            <div class="card custom-card text-center border-0">
+                                <img src="./assets/pic/PhoneImages/57d1a382f541fcdb7acd1773c83ad9ee4c43bbed_1626013529.jpg" class="card-img-top custom-card-img-top align-self-center " alt="... ">
+                                <div class="card-body ">
+                                    <p class="card-text custom-card-text">گوشی موبایل مدل A30</p>
+                                    <p class="card-text custom-card-discount mt-2"><s class="text-danger">17,340,000 تومان</s><span class="badge badge-pill badge-danger mr-2">15%</span></p>
+                                    <p class="card-text custom-card-price mt-2">16,340,000 تومان</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="owl-carousel-item p-2">
+                        <a href="#" class="text-decoration-none">
+                            <div class="card custom-card text-center border-0">
+                                <img src="./assets/pic/PhoneImages/68ab81310046a9b492a52672ef88335eeabb54b0_1632317851.jpg" class="card-img-top custom-card-img-top align-self-center " alt="... ">
+                                <div class="card-body ">
+                                    <p class="card-text custom-card-text">گوشی موبایل مدل A30</p>
+                                    <p class="card-text custom-card-discount mt-2"><s class="text-danger">17,340,000 تومان</s><span class="badge badge-pill badge-danger mr-2">15%</span></p>
+                                    <p class="card-text custom-card-price mt-2">16,340,000 تومان</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="owl-carousel-item p-2">
+                        <a href="#" class="text-decoration-none">
+                            <div class="card custom-card text-center border-0">
+                                <img src="./assets/pic/PhoneImages/70f422ea1bc49e3e4abf2f7d4a26523fa30135de_1630158666.jpg" class="card-img-top custom-card-img-top align-self-center " alt="... ">
+                                <div class="card-body ">
+                                    <p class="card-text custom-card-text">گوشی موبایل مدل A30</p>
+                                    <p class="card-text custom-card-discount mt-2"><s class="text-danger">17,340,000 تومان</s><span class="badge badge-pill badge-danger mr-2">15%</span></p>
+                                    <p class="card-text custom-card-price mt-2">16,340,000 تومان</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="owl-carousel-item p-2">
+                        <a href="#" class="text-decoration-none">
+                            <div class="card custom-card text-center border-0">
+                                <img src="./assets/pic/PhoneImages/769e4de6ce0a9b156dc97ba5b4aba6616e63f0f3_1610971192.jpg" class="card-img-top custom-card-img-top align-self-center " alt="... ">
+                                <div class="card-body ">
+                                    <p class="card-text custom-card-text">گوشی موبایل مدل A30</p>
+                                    <p class="card-text custom-card-discount mt-2"><s class="text-danger">17,340,000 تومان</s><span class="badge badge-pill badge-danger mr-2">15%</span></p>
+                                    <p class="card-text custom-card-price mt-2">16,340,000 تومان</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="owl-carousel-item p-2">
+                        <a href="#" class="text-decoration-none">
+                            <div class="card custom-card text-center border-0">
+                                <img src="./assets/pic/PhoneImages/8a499b9702b546cdcd882c72dab527b95924a4b5_1632312814.jpg" class="card-img-top custom-card-img-top align-self-center " alt="... ">
+                                <div class="card-body ">
+                                    <p class="card-text custom-card-text">گوشی موبایل مدل A30</p>
+                                    <p class="card-text custom-card-discount mt-2"><s class="text-danger">17,340,000 تومان</s><span class="badge badge-pill badge-danger mr-2">15%</span></p>
+                                    <p class="card-text custom-card-price mt-2">16,340,000 تومان</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="owl-carousel-item p-2">
+                        <a href="#" class="text-decoration-none">
+                            <div class="card custom-card text-center border-0">
+                                <img src="./assets/pic/PhoneImages/987bbf684de2df847c8fa1dcb9570fbf580f79dc_1611468226.jpg" class="card-img-top custom-card-img-top align-self-center " alt="... ">
+                                <div class="card-body ">
+                                    <p class="card-text custom-card-text">گوشی موبایل مدل A30</p>
+                                    <p class="card-text custom-card-discount mt-2"><s class="text-danger">17,340,000 تومان</s><span class="badge badge-pill badge-danger mr-2">15%</span></p>
+                                    <p class="card-text custom-card-price mt-2">16,340,000 تومان</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="owl-carousel-item p-2">
+                        <a href="#" class="text-decoration-none">
+                            <div class="card custom-card text-center border-0">
+                                <img src="./assets/pic/PhoneImages/9db64cde85334e3bf4a6571547d339c57867f11f_1634390548.jpg" class="card-img-top custom-card-img-top align-self-center " alt="... ">
+                                <div class="card-body ">
+                                    <p class="card-text custom-card-text">گوشی موبایل مدل A30</p>
+                                    <p class="card-text custom-card-discount mt-2"><s class="text-danger">17,340,000 تومان</s><span class="badge badge-pill badge-danger mr-2">15%</span></p>
+                                    <p class="card-text custom-card-price mt-2">16,340,000 تومان</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="owl-carousel-item p-2">
+                        <a href="#" class="text-decoration-none">
+                            <div class="card custom-card text-center border-0">
+                                <img src="./assets/pic/PhoneImages/9db64cde85334e3bf4a6571547d339c57867f11f_1634390689.jpg" class="card-img-top custom-card-img-top align-self-center " alt="... ">
+                                <div class="card-body ">
+                                    <p class="card-text custom-card-text">گوشی موبایل مدل A30</p>
+                                    <p class="card-text custom-card-discount mt-2"><s class="text-danger">17,340,000 تومان</s><span class="badge badge-pill badge-danger mr-2">15%</span></p>
+                                    <p class="card-text custom-card-price mt-2">16,340,000 تومان</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="owl-carousel-item p-2">
+                        <a href="#" class="text-decoration-none">
+                            <div class="card custom-card text-center border-0">
+                                <img src="./assets/pic/PhoneImages/be7a0e9bf7866759fa3cea7648b149f589a01040_1607433995.jpg" class="card-img-top custom-card-img-top align-self-center " alt="... ">
+                                <div class="card-body ">
+                                    <p class="card-text custom-card-text">گوشی موبایل مدل A30</p>
+                                    <p class="card-text custom-card-discount mt-2"><s class="text-danger">17,340,000 تومان</s><span class="badge badge-pill badge-danger mr-2">15%</span></p>
+                                    <p class="card-text custom-card-price mt-2">16,340,000 تومان</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="owl-carousel-item p-2">
+                        <a href="#" class="text-decoration-none">
+                            <div class="card custom-card text-center border-0">
+                                <img src="./assets/pic/PhoneImages/d39d1ae019b5c5454f86c9e3754d03bacdf7dba2_1626014366.jpg" class="card-img-top custom-card-img-top align-self-center " alt="... ">
+                                <div class="card-body ">
+                                    <p class="card-text custom-card-text">گوشی موبایل مدل A30</p>
+                                    <p class="card-text custom-card-discount mt-2"><s class="text-danger">17,340,000 تومان</s><span class="badge badge-pill badge-danger mr-2">15%</span></p>
+                                    <p class="card-text custom-card-price mt-2">16,340,000 تومان</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="owl-carousel-item p-2">
+                        <a href="#" class="text-decoration-none">
+                            <div class="card custom-card text-center border-0">
+                                <img src="./assets/pic/PhoneImages/d48f70d64f989092aa9493a40ab90ae47e0667c4_1626014826.jpg" class="card-img-top custom-card-img-top align-self-center " alt="... ">
+                                <div class="card-body ">
+                                    <p class="card-text custom-card-text">گوشی موبایل مدل A30</p>
+                                    <p class="card-text custom-card-discount mt-2"><s class="text-danger">17,340,000 تومان</s><span class="badge badge-pill badge-danger mr-2">15%</span></p>
+                                    <p class="card-text custom-card-price mt-2">16,340,000 تومان</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end carousel -->
+    <!-- start ads5 -->
+    <div class="container mt-1">
+        <div class="row no-gutters">
+            <div class="col-sm-12 col-md-6 p-3">
+                <div>
+                    <a href="#">
+                        <img class="d-block w-100 rounded" src="./assets/pic/SliderImages/7/1000000199.jpg" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-6 p-3">
+                <div>
+                    <a href="#">
+                        <img class="d-block w-100 rounded" src="./assets/pic/SliderImages/7/1000000200.jpg" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end ads5 -->
+    <!-- start carousel -->
+    <section class="container mt-5">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 position-relative">
+                <p class="laptop-header">کیس اسمبل شده</p>
+                <div class="owl-carousel bg-white mt-5">
+                    <div class="owl-carousel-item p-2">
+                        <a href="#" class="text-decoration-none">
+                            <div class="card custom-card text-center border-0">
+                                <img src="./assets/pic/CaseImages/1965cde5fb485c7c725488827ef8057e3f9b897d_1637403641.jpg" class="card-img-top custom-card-img-top align-self-center " alt="... ">
+                                <div class="card-body ">
+                                    <p class="card-text custom-card-text">کیس مدل v780 pro</p>
+                                    <p class="card-text custom-card-discount mt-2"><s class="text-danger">17,340,000 تومان</s><span class="badge badge-pill badge-danger mr-2">15%</span></p>
+                                    <p class="card-text custom-card-price mt-2">16,340,000 تومان</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="owl-carousel-item p-2">
+                        <a href="#" class="text-decoration-none">
+                            <div class="card custom-card text-center border-0">
+                                <img src="./assets/pic/CaseImages/1a73c515b8eacb49e6c5046bf9f917a759335da5_1632033977.jpg" class="card-img-top custom-card-img-top align-self-center " alt="... ">
+                                <div class="card-body ">
+                                    <p class="card-text custom-card-text">کیس مدل v780 pro</p>
+                                    <p class="card-text custom-card-discount mt-2"><s class="text-danger">17,340,000 تومان</s><span class="badge badge-pill badge-danger mr-2">15%</span></p>
+                                    <p class="card-text custom-card-price mt-2">16,340,000 تومان</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="owl-carousel-item p-2">
+                        <a href="#" class="text-decoration-none">
+                            <div class="card custom-card text-center border-0">
+                                <img src="./assets/pic/CaseImages/2bc59ffb5c0cd599ac77c3923ab289efb0174577_1635849570.jpg" class="card-img-top custom-card-img-top align-self-center " alt="... ">
+                                <div class="card-body ">
+                                    <p class="card-text custom-card-text">کیس مدل v780 pro</p>
+                                    <p class="card-text custom-card-discount mt-2"><s class="text-danger">17,340,000 تومان</s><span class="badge badge-pill badge-danger mr-2">15%</span></p>
+                                    <p class="card-text custom-card-price mt-2">16,340,000 تومان</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="owl-carousel-item p-2">
+                        <a href="#" class="text-decoration-none">
+                            <div class="card custom-card text-center border-0">
+                                <img src="./assets/pic/CaseImages/53245fe016e408e7a3b9aa5abb6a4c6b91c1ef04_1634042567.jpg" class="card-img-top custom-card-img-top align-self-center " alt="... ">
+                                <div class="card-body ">
+                                    <p class="card-text custom-card-text">کیس مدل v780 pro</p>
+                                    <p class="card-text custom-card-discount mt-2"><s class="text-danger">17,340,000 تومان</s><span class="badge badge-pill badge-danger mr-2">15%</span></p>
+                                    <p class="card-text custom-card-price mt-2">16,340,000 تومان</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="owl-carousel-item p-2">
+                        <a href="#" class="text-decoration-none">
+                            <div class="card custom-card text-center border-0">
+                                <img src="./assets/pic/CaseImages/5cae5e72c77b575a34045eaeb147675994579b99_1634545156.jpg" class="card-img-top custom-card-img-top align-self-center " alt="... ">
+                                <div class="card-body ">
+                                    <p class="card-text custom-card-text">کیس مدل v780 pro</p>
+                                    <p class="card-text custom-card-discount mt-2"><s class="text-danger">17,340,000 تومان</s><span class="badge badge-pill badge-danger mr-2">15%</span></p>
+                                    <p class="card-text custom-card-price mt-2">16,340,000 تومان</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="owl-carousel-item p-2">
+                        <a href="#" class="text-decoration-none">
+                            <div class="card custom-card text-center border-0">
+                                <img src="./assets/pic/CaseImages/5d6723c521f720adeec84f9bb110d1785e3b1e7d_1634483014.jpg" class="card-img-top custom-card-img-top align-self-center " alt="... ">
+                                <div class="card-body ">
+                                    <p class="card-text custom-card-text">کیس مدل v780 pro</p>
+                                    <p class="card-text custom-card-discount mt-2"><s class="text-danger">17,340,000 تومان</s><span class="badge badge-pill badge-danger mr-2">15%</span></p>
+                                    <p class="card-text custom-card-price mt-2">16,340,000 تومان</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="owl-carousel-item p-2">
+                        <a href="#" class="text-decoration-none">
+                            <div class="card custom-card text-center border-0">
+                                <img src="./assets/pic/CaseImages/8749aa4b02e4eae70abf4d0e9e54a4ab90099622_1636968946.jpg" class="card-img-top custom-card-img-top align-self-center " alt="... ">
+                                <div class="card-body ">
+                                    <p class="card-text custom-card-text">کیس مدل v780 pro</p>
+                                    <p class="card-text custom-card-discount mt-2"><s class="text-danger">17,340,000 تومان</s><span class="badge badge-pill badge-danger mr-2">15%</span></p>
+                                    <p class="card-text custom-card-price mt-2">16,340,000 تومان</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="owl-carousel-item p-2">
+                        <a href="#" class="text-decoration-none">
+                            <div class="card custom-card text-center border-0">
+                                <img src="./assets/pic/CaseImages/89af2c72494b584aec57fc4b9089ec7957c3d29f_1610177359.jpg" class="card-img-top custom-card-img-top align-self-center " alt="... ">
+                                <div class="card-body ">
+                                    <p class="card-text custom-card-text">کیس مدل v780 pro</p>
+                                    <p class="card-text custom-card-discount mt-2"><s class="text-danger">17,340,000 تومان</s><span class="badge badge-pill badge-danger mr-2">15%</span></p>
+                                    <p class="card-text custom-card-price mt-2">16,340,000 تومان</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="owl-carousel-item p-2">
+                        <a href="#" class="text-decoration-none">
+                            <div class="card custom-card text-center border-0">
+                                <img src="./assets/pic/CaseImages/8a1c145e8ee4a44e7a12d2083a0a99e83c8700a3_1630243049.jpg" class="card-img-top custom-card-img-top align-self-center " alt="... ">
+                                <div class="card-body ">
+                                    <p class="card-text custom-card-text">کیس مدل v780 pro</p>
+                                    <p class="card-text custom-card-discount mt-2"><s class="text-danger">17,340,000 تومان</s><span class="badge badge-pill badge-danger mr-2">15%</span></p>
+                                    <p class="card-text custom-card-price mt-2">16,340,000 تومان</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="owl-carousel-item p-2">
+                        <a href="#" class="text-decoration-none">
+                            <div class="card custom-card text-center border-0">
+                                <img src="./assets/pic/CaseImages/9693ff15144589baa252f82549a2fd78222d23b4_1637052834.jpg" class="card-img-top custom-card-img-top align-self-center " alt="... ">
+                                <div class="card-body ">
+                                    <p class="card-text custom-card-text">کیس مدل v780 pro</p>
+                                    <p class="card-text custom-card-discount mt-2"><s class="text-danger">17,340,000 تومان</s><span class="badge badge-pill badge-danger mr-2">15%</span></p>
+                                    <p class="card-text custom-card-price mt-2">16,340,000 تومان</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="owl-carousel-item p-2">
+                        <a href="#" class="text-decoration-none">
+                            <div class="card custom-card text-center border-0">
+                                <img src="./assets/pic/CaseImages/969664d9ca02a87cbe988ea0108d5f3807e46343_1631541371.jpg" class="card-img-top custom-card-img-top align-self-center " alt="... ">
+                                <div class="card-body ">
+                                    <p class="card-text custom-card-text">کیس مدل v780 pro</p>
+                                    <p class="card-text custom-card-discount mt-2"><s class="text-danger">17,340,000 تومان</s><span class="badge badge-pill badge-danger mr-2">15%</span></p>
+                                    <p class="card-text custom-card-price mt-2">16,340,000 تومان</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="owl-carousel-item p-2">
+                        <a href="#" class="text-decoration-none">
+                            <div class="card custom-card text-center border-0">
+                                <img src="./assets/pic/CaseImages/96b7537784e26f5cf1df126ad311f93dc63c28fd_1634468138.jpg" class="card-img-top custom-card-img-top align-self-center " alt="... ">
+                                <div class="card-body ">
+                                    <p class="card-text custom-card-text">کیس مدل v780 pro</p>
+                                    <p class="card-text custom-card-discount mt-2"><s class="text-danger">17,340,000 تومان</s><span class="badge badge-pill badge-danger mr-2">15%</span></p>
+                                    <p class="card-text custom-card-price mt-2">16,340,000 تومان</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="owl-carousel-item p-2">
+                        <a href="#" class="text-decoration-none">
+                            <div class="card custom-card text-center border-0">
+                                <img src="./assets/pic/CaseImages/a074a748a8037856395d3e4694652faac085b201_1634484798.jpg" class="card-img-top custom-card-img-top align-self-center " alt="... ">
+                                <div class="card-body ">
+                                    <p class="card-text custom-card-text">کیس مدل v780 pro</p>
+                                    <p class="card-text custom-card-discount mt-2"><s class="text-danger">17,340,000 تومان</s><span class="badge badge-pill badge-danger mr-2">15%</span></p>
+                                    <p class="card-text custom-card-price mt-2">16,340,000 تومان</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="owl-carousel-item p-2">
+                        <a href="#" class="text-decoration-none">
+                            <div class="card custom-card text-center border-0">
+                                <img src="./assets/pic/CaseImages/def1fb9b22097149b0568ca5b9aa5b225a921e9b_1634397590.jpg" class="card-img-top custom-card-img-top align-self-center " alt="... ">
+                                <div class="card-body ">
+                                    <p class="card-text custom-card-text">کیس مدل v780 pro</p>
+                                    <p class="card-text custom-card-discount mt-2"><s class="text-danger">17,340,000 تومان</s><span class="badge badge-pill badge-danger mr-2">15%</span></p>
+                                    <p class="card-text custom-card-price mt-2">16,340,000 تومان</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end carousel -->
+    <!-- start ads6 -->
+    <div class="container mt-1">
+        <div class="row no-gutters">
+            <div class="col-sm-12 col-md-6 p-3">
+                <div>
+                    <a href="#">
+                        <img class="d-block w-100 rounded" src="./assets/pic/SliderImages/4/8efcf8d1dd4eb498a5b5ff4a6bfac3041fd30cce_1632943196.jpg" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-6 p-3">
+                <div>
+                    <a href="#">
+                        <img class="d-block w-100 rounded" src="./assets/pic/SliderImages/4/ed47c680913a4a0a6705353ddcd80a507bb1072b_1638354934.jpg" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end ads6 -->
+    <!-- start footer -->
+    <footer class="container-fluid mt-5">
+        <div class="row">
+            <section class="container" dir="rtl">
+                <div class="row text-right">
+                    <div class="col-sm-12 col-md-6 col-lg-4">
+                        <div class="newsFeed d-flex flex-column justify-content-center">
+                            <h6>عضویت در خبرنامه</h6>
+                            <p>با عضویت در خبرنامه از <span class="text-danger">تخفیف های</span> ما مطلع شوید</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-4 py-2">
+                        <div class="newsFeedDeatail d-flex justify-content-center align-items-center">
+                            <p>با عضویت در خبرنامه به <span class="text-success">+139000 مشترک ما بپیوند</span> و از تخفیف ها و جوایز ویژه بهره مند شوید</p>
+                        </div>
+                    </div>
+                    <form class="col-sm-12 col-md-12 col-lg-4 d-flex justify-content-center align-items-center newsFeedSignup">
+                        <div class="input-group">
+                            <input type="text" class="form-control rounded-right" id="newsfeed" placeholder="عضویت در خبرنامه" aria-label="Text input with dropdown button">
+                            <div class="input-group-prepend">
+                                <button class="btn btn-danger rounded-left px-4" type="button">اشتراک</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </section>
+            <section class="container mt-5">
+                <div class="row text-right" dir="rtl">
+                    <div class="col-xs-12 col-md-3">
+                        <div class="footer-section1">
+                            <span class="footer-section1-title">اطلاعات</span>
+                            <nav class="nav flex-column mt-3">
+                                <a class="nav-link" href="#">درباره ما</a>
+                                <a class="nav-link" href="#">نحوه ارسال</a>
+                                <a class="nav-link" href="#">محصولات جدید</a>
+                                <a class="nav-link" href="#">محصولات منتخب</a>
+                                <a class="nav-link" href="#">سوابق خرید</a>
+                                <a class="nav-link" href="#">حساب کاربری</a>
+                            </nav>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-3">
+                        <div class="footer-section1">
+                            <span class="footer-section1-title">خدمات مشتریان</span>
+                            <nav class="nav flex-column mt-3">
+                                <a class="nav-link" href="#">حساب کاربری</a>
+                                <a class="nav-link" href="#">سبد خرید</a>
+                                <a class="nav-link" href="#">علاقه مندی ها</a>
+                                <a class="nav-link" href="#">کاهش قیمت ها</a>
+                                <a class="nav-link" href="#">سوابق خرید</a>
+                                <a class="nav-link" href="#">سفارشات کشوری</a>
+                            </nav>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-3">
+                        <div class="footer-section1">
+                            <span class="footer-section1-title">حساب کاربری</span>
+                            <nav class="nav flex-column mt-3">
+                                <a class="nav-link" href="#">نقشه سایت</a>
+                                <a class="nav-link" href="#">نقد و بررسی</a>
+                                <a class="nav-link" href="#">محصولات ویژه</a>
+                                <a class="nav-link" href="#">نحوه ارسال</a>
+                                <a class="nav-link" href="#">خرید اقساطی</a>
+                                <a class="nav-link" href="#">کاربران ویژه</a>
+                            </nav>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-3">
+                        <div class="footer-section1">
+                            <span class="footer-section1-title"> اطلاعات تماس</span>
+                            <div class="contactUs pt-3">
+                                <div class="support d-flex align-items-center">
+                                    <div class="support-icon"><i class="fas fa-headset"></i></div>
+                                    <div class="support-title mr-3">
+                                        <p>پشتیبانی 24 ساعته</p>
+                                        <p>02532221111</p>
+                                    </div>
+                                </div>
+                                <div class="socials py-3 d-sm-flex d-flex justify-content-around align-items-center">
+                                    <a href="#twitter" title="twitter"><i class="fab fa-twitter"></i></a>
+                                    <a href="#facebook" title="facebook"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="#instagram" title="instagram"><i class="fab fa-instagram"></i></a>
+                                    <a href="#telegram" title="telegram"><i class="fab fa-telegram-plane"></i></a>
+                                    <a href="#linkedin" title="linkedin"><i class="fab fa-linkedin"></i></a>
+                                    <a href="#whatsapp" title="whatsapp"><i class="fab fa-whatsapp"></i></a>
+                                </div>
+                                <div class="addres d-flex justify-content-center align-items-center">
+                                    <address>قم خیابان صدوقی کوچه بلوار بوعلی</address>
+                                </div>
+                                <div class="copy-right d-flex align-items-center">
+                                    <p>تمامی حقوق مادی و معنوی سایت محفوظ می باشد <i class="fa fa-copyright"></i></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </footer>
+    <!-- end footer -->
+    <br><br>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js " integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj " crossorigin="anonymous "></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js " integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN " crossorigin="anonymous "></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js " integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2 " crossorigin="anonymous "></script>
+    <script src="assets/js/owl.carousel.min.js "></script>
+    <script src="assets/js/main.js "></script>
+</body>
+
+</html>

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css">
+    <title>Form</title>
+</head>
+
+<body>
+    <div class="container">
+        <a id="login"></a>
+        <a id="signUp"></a>
+        <div class="contentWrapper">
+            <div class="formsContainer">
+                <form method="post" class="signUp" autocomplete="off">
+                    <h3>عضویت از طریق شبکه های اجتماعی</h3>
+                    <fieldset class="Logos">
+                        <div class="logo">
+                            <a href="#">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                        </div>
+                        <div class="logo">
+                            <a href="#">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </div>
+                        <div class="logo">
+                            <a href="#">
+                                <i class="fab fa-google-plus-g"></i>
+                            </a>
+                        </div>
+                        <div class="logo">
+                            <a href="#">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                        </div>
+                    </fieldset>
+                    <label for="username">نام :</label>
+                    <fieldset class="input">
+                        <input type="text" placeholder="نام...." id="username" autofocus>
+                        <span></span>
+                    </fieldset>
+                    <label for="usermail">ایمیل :</label>
+                    <fieldset class="input">
+                        <input type="text" placeholder="ایمیل...." id="usermail">
+                        <span></span>
+                    </fieldset>
+                    <label for="userpass">کلمه عبور :</label>
+                    <fieldset class="input">
+                        <input type="password" placeholder="کلمه عبور...." id="userpass">
+                        <i class="far fa-eye visible" onclick="changeSrc(this)"></i>
+                        <span></span>
+                    </fieldset>
+                    <fieldset class="submit">
+                        <input type="submit" value="ثبت نام">
+                    </fieldset>
+                </form>
+                <form method="post" class="login" autocomplete="off">
+                    <h3>ورود از طریق شبکه های اجتماعی</h3>
+                    <fieldset class="Logos">
+                        <div class="logo">
+                            <a href="#">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                        </div>
+                        <div class="logo">
+                            <a href="#">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </div>
+                        <div class="logo">
+                            <a href="#">
+                                <i class="fab fa-google-plus-g"></i>
+                            </a>
+                        </div>
+                        <div class="logo">
+                            <a href="#">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                        </div>
+                    </fieldset>
+                    <label for="name">نام :</label>
+                    <fieldset class="input">
+                        <input type="text" placeholder="نام...." id="name" autofocus>
+                        <span></span>
+                    </fieldset>
+                    <label for="pass">کلمه عبور :</label>
+                    <fieldset class="input">
+                        <input type="password" placeholder="کلمه عبور..." id="pass">
+                        <i class="far fa-eye visible" onclick="changeSrc(this)"></i>
+                        <span></span>
+                    </fieldset>
+                    <fieldset class="input">
+                        <a href="#">فراموشی کلمه عبور</a>
+                    </fieldset>
+                    <fieldset class="submit">
+                        <input type="submit" value="ورود">
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+        <div class="overlayWrapper">
+            <div class="overlayContainer">
+                <div class="showLogin">
+                    <h2>خوش آمدید</h2>
+                    <h5>برای دسترسی به تمام امکانات سایت ابتدا وارد شوید</h5>
+                    <a href="#login" class="btnCustum">ورود</a>
+                </div>
+                <div class="showSignUp">
+                    <h2>خوش آمدید</h2>
+                    <h5>برای دسترسی به تمام امکانات سایت ابتدا ثبت نام کنید</h5>
+                    <a href="#signUp" class="btnCustum">ثبت نام</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <div class="Home">
+        <a href="../index.html"><i class="fas fa-home"></i></a>
+    </div> -->
+    <div class="circleMenu">
+        <button id="circleMenu-link" onclick="showMenu(this)" class="circleMenu-link"><i class="fas fa-plus"></i></button>
+        <nav class="linksWrapper">
+            <a href="../index.html" class="fa fa-home" title="Home"></a>
+            <a href="index.html" class="fa fa-user" title="User"></a>
+            <a href="#" class="fa fa-chart-pie" title="Chart"></a>
+            <a href="#" class="fa fa-cog" title="Setting"></a>
+        </nav>
+    </div>
+    <script>
+        function changeSrc(elem) {
+            let ClassLists = elem.classList;
+            let input = elem.previousElementSibling;
+            if (ClassLists.contains("fa-eye")) {
+                ClassLists.replace('fa-eye', 'fa-eye-slash');
+                input.type = "text";
+            } else {
+                ClassLists.replace('fa-eye-slash', 'fa-eye')
+                input.type = "password";
+            }
+        }
+
+        function showMenu(element) {
+            element.parentElement.classList.toggle('active');
+        }
+    </script>
+</body>
+
+</html>

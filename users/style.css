@@ -1,0 +1,580 @@
+@font-face {
+    font-family: 'vazir';
+    src: url(../assets/fonts/Vazir-Medium.eot) format('eot'), url(../assets/fonts/Vazir-Medium.woff) format('woff'), url(../assets/fonts/Vazir-Medium.woff2) format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+*,
+html,
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'vazir';
+}
+
+body {
+    background-color: #f8f9f7;
+}
+
+.container-modal {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    background-color: rgba(0, 0, 0, .3);
+    z-index: 99;
+    display: none;
+}
+
+.modal {
+    width: 300px;
+    height: 400px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+    background-color: #f7f7f7;
+    border-radius: 5px;
+    overflow: hidden;
+    text-align: center;
+    display: none;
+}
+
+.modal .exclamation {
+    width: 100%;
+    height: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal .exclamation>i {
+    color: rgb(224, 1, 1);
+    font-size: 100px;
+}
+
+.modal .closeModal {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+}
+
+.modal .closeModal i {
+    font-size: 16px;
+}
+
+.modal .closeModalBtn {
+    width: 130px;
+    height: 50px;
+    position: absolute;
+    bottom: 20px;
+    right: 10px;
+    padding: 10px 20px;
+    color: #fff;
+    background-color: rgb(202, 7, 0);
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+}
+
+.modal .deleteUser {
+    width: 130px;
+    height: 50px;
+    position: absolute;
+    bottom: 20px;
+    left: 10px;
+    padding: 10px 20px;
+    color: #fff;
+    background-color: rgb(1, 173, 1);
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+}
+
+.contextmenu {
+    width: 100px;
+    height: 200px;
+    background-color: rgba(0, 0, 0, .1);
+    border-radius: 5px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    border: 2px solid rgba(0, 0, 0, .3);
+    overflow: hidden;
+    text-align: center;
+    font-size: 13px;
+    display: none;
+}
+
+.contextmenu li {
+    padding: 3px 0;
+    cursor: pointer;
+}
+
+.contextmenu li:not(:last-child) {
+    border-bottom: 2px solid rgba(0, 0, 0, .3);
+}
+
+.container-date {
+    width: 80%;
+    height: 60px;
+    margin: 15px auto;
+    text-align: center;
+    font-size: 24px;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    direction: ltr;
+}
+
+.container-date #hour,
+.container-date #minute,
+.container-date #second {
+    width: 40px;
+    height: 45px;
+    background-color: #f5f5f5;
+    margin: 0 15px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.container-date #hour::after {
+    content: "ساعت";
+    color: rgba(0, 0, 0, .5);
+    font-size: 12px;
+}
+
+.container-date #minute::after {
+    content: "دقیقه";
+    color: rgba(0, 0, 0, .5);
+    font-size: 12px;
+}
+
+.container-date #second::after {
+    content: "ثانیه";
+    color: rgba(0, 0, 0, .5);
+    font-size: 12px;
+}
+
+.container-toast {
+    width: 80%;
+    margin: 0 auto;
+    height: 90px;
+}
+
+.container-toast .container {
+    width: 30%;
+    height: 100%;
+    overflow: hidden;
+    margin: auto;
+    position: relative;
+}
+
+.toast {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    margin: 10px auto;
+    background-color: #fff;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .1);
+    display: none;
+}
+
+.green::before {
+    content: '';
+    width: 2px;
+    height: 100%;
+    display: block;
+    position: absolute;
+    background-color: rgb(1, 173, 1);
+    right: 0;
+}
+
+.red::before {
+    content: '';
+    width: 2px;
+    height: 100%;
+    display: block;
+    position: absolute;
+    background-color: rgb(202, 7, 0);
+    right: 0;
+}
+
+.green,
+.red {
+    width: 10%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    float: right;
+}
+
+.success {
+    display: block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: rgb(1, 173, 1);
+}
+
+.content {
+    width: 80%;
+    height: 100%;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    float: right;
+}
+
+.content>p {
+    font-size: 12px;
+    color: rgba(0, 0, 0, .4);
+}
+
+.logo {
+    float: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 10%;
+    height: 100%;
+}
+
+.btn {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    cursor: pointer;
+    display: block;
+    width: 30px;
+    height: 30px;
+    position: relative;
+}
+
+.btn>span:nth-child(1) {
+    display: block;
+    width: 20px;
+    height: 2px;
+    position: absolute;
+    background-color: rgba(0, 0, 0, .4);
+    transform: rotate(45deg);
+}
+
+.btn>span:nth-child(2) {
+    display: block;
+    width: 20px;
+    height: 2px;
+    position: absolute;
+    background-color: rgba(0, 0, 0, .4);
+    transform: rotate(-45deg);
+}
+
+.bg-red {
+    background-color: rgb(202, 7, 0);
+}
+
+.container-form {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.container-form>form {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding: 10px 30px;
+    border: 2px solid rgba(0, 0, 0, .1);
+    border-radius: 5px;
+    position: relative;
+}
+
+.container-form>form>label {
+    padding: 7px 20px;
+}
+
+.container-form>form>input {
+    display: inline-block;
+    width: 40%;
+    height: 100%;
+    margin-right: 30px;
+    border: none;
+    outline: none;
+    padding: 10px 30px;
+    border-radius: 5px;
+    background-color: rgb(0, 0, 0, .1);
+}
+
+.container-form>form button:first-of-type {
+    display: inline-block;
+    width: 10%;
+    height: 60%;
+    position: absolute;
+    left: 15%;
+    top: 20%;
+    background-color: limegreen;
+    border: none;
+    outline: none;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.container-form>form button:last-of-type {
+    display: inline-block;
+    width: 10%;
+    height: 60%;
+    position: absolute;
+    left: 3%;
+    top: 20%;
+    background-color: rgb(224, 1, 1);
+    border: none;
+    outline: none;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.container-table {
+    width: 80%;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.container-table table {
+    padding: 10px 30px;
+    border: 2px solid rgba(0, 0, 0, .1);
+    border-radius: 15px;
+    position: relative;
+    border-collapse: collapse;
+}
+
+.container-table table caption {
+    margin-bottom: 20px;
+}
+
+.container-table table tbody.colour tr:nth-child(odd) {
+    background-color: #fff;
+}
+
+.container-table table tbody.colour tr:nth-child(even) {
+    background-color: #aaa;
+}
+
+td,
+th {
+    width: 20%;
+    height: auto;
+    font-size: 14px;
+    border: 1px solid rgba(0, 0, 0, .1);
+    padding: 10px;
+}
+
+th:nth-child(2),
+th:nth-child(3) {
+    cursor: pointer;
+}
+
+.container-table table thead {
+    background-color: rgba(0, 0, 0, .3);
+}
+
+.container-table table thead th i {
+    color: #000;
+}
+
+.container-table table tbody tr:nth-child(even) {
+    background-color: rgba(0, 0, 0, .2);
+}
+
+.delete {
+    border: none;
+    padding: 5px 15px;
+    background-color: rgb(202, 7, 0);
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.delete>i,
+.update>i {
+    font-size: 16px;
+    background-color: transparent;
+    color: #fff;
+}
+
+.update {
+    border: none;
+    padding: 5px 15px;
+    background-color: rgb(255, 176, 30);
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.bg-green {
+    background-color: rgb(18, 214, 0);
+}
+
+.edit>input {
+    text-align: center;
+}
+
+.arrow-up {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    cursor: pointer;
+    z-index: 98;
+    display: none;
+}
+
+.arrow-up img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.disabled {
+    background-color: rgba(0, 0, 0, .4)!important;
+}
+
+.redColor {
+    color: red!important;
+}
+
+.editable {
+    border: none;
+    outline: 1px solid rgba(0, 0, 0, .4);
+    padding: 3px 8px;
+}
+
+.Home {
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: #000;
+}
+
+.Home a i {
+    color: #fff;
+    font-size: 26px;
+}
+
+.circleMenu {
+    position: fixed;
+    left: 2em;
+    bottom: 2em;
+}
+
+.circleMenu-link {
+    width: 3.5em;
+    height: 3.5em;
+    border-radius: 50%;
+    background-color: rgb(224, 0, 0);
+    color: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    box-shadow: 1px 3px 5px 0 rgba(0, 0, 0, .2);
+}
+
+.circleMenu-link:active {
+    box-shadow: 1px 3px 8px 2px rgba(0, 0, 0, .3);
+}
+
+.circleMenu-link i {
+    font-size: 18px;
+    line-height: 1.8;
+    transition: .5s ease;
+}
+
+.circleMenu.active .circleMenu-link i {
+    transform: rotate(-45deg);
+}
+
+.linksWrapper>a {
+    display: flex;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    font-size: 16px;
+    background-color: rgba(0, 0, 0, .1);
+    color: #fff;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    top: 5px;
+    left: 5px;
+    z-index: -1;
+    transition: .5s ease;
+}
+
+.linksWrapper>a:hover {
+    background-color: rgba(0, 0, 0, .3);
+}
+
+.circleMenu::after {
+    content: "";
+    width: 3em;
+    height: 3em;
+    background-color: rgb(255, 69, 36);
+    position: absolute;
+    z-index: -2;
+    border-radius: 50%;
+    top: 0;
+    left: 0;
+    transition: .5s;
+}
+
+.circleMenu.active::after {
+    transform: scale3d(5.5, 5.5, 5.1);
+}
+
+.circleMenu.active .linksWrapper>a:first-child {
+    top: -75px;
+    left: -14px;
+}
+
+.circleMenu.active .linksWrapper>a:nth-child(2) {
+    top: -66px;
+    left: 40px;
+}
+
+.circleMenu.active .linksWrapper>a:nth-child(3) {
+    top: -28px;
+    left: 75px;
+}
+
+.circleMenu.active .linksWrapper>a:last-child {
+    top: 22px;
+    left: 80px;
+}

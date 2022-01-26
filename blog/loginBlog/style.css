@@ -1,0 +1,273 @@
+@font-face {
+    font-family: 'Vazir';
+    src: url(../../assets/fonts/Vazir-Medium.eot) format('eot'), url(../../assets/fonts/Vazir-Medium.woff) format('woff'), url(../../assets/fonts/Vazir-Medium.woff2) format('woff2');
+    font-style: normal;
+    font-weight: normal;
+    font-size: medium;
+}
+
+* {
+    font-family: 'Vazir';
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    direction: rtl;
+}
+
+fieldset {
+    border: none;
+}
+
+input {
+    border: none;
+    outline: none;
+}
+
+html,
+body {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.formContainer {
+    min-width: 700px;
+    height: 400px;
+    overflow: hidden;
+    border: 2px solid #f7f7f7;
+    border-radius: 5px;
+    box-shadow: 0px 0px 4px 0 #f0f0f0;
+}
+
+.loginContainer {
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    float: right;
+    clear: right;
+    display: flex;
+    flex-direction: column;
+}
+
+.adsContainer,
+.userName,
+.userPassword {
+    width: 100%;
+    height: 25%;
+    overflow: hidden;
+    position: relative;
+}
+
+.adsContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.google,
+.facebook {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.google a,
+.facebook a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+}
+
+.google a i,
+.facebook a i {
+    font-size: 32px;
+    color: #000;
+    background-color: #fff;
+    transition: .5s;
+}
+
+.google:hover a i,
+.facebook:hover a i {
+    background-color: #000;
+    color: #fff;
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 0 20px;
+}
+
+.flex-cu {
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.input {
+    background-color: inherit;
+    width: 100%;
+    height: 50%;
+    position: relative;
+    display: block;
+}
+
+.input~span {
+    content: "";
+    display: block;
+    height: 2px;
+    width: 100%;
+    background-color: rgb(33, 241, 231);
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+    transform: translateX(120%);
+    transition: .7s linear;
+}
+
+.input:focus~span {
+    transform: translateX(0);
+}
+
+.label {
+    background-color: inherit;
+    margin-top: 10px;
+    width: 100%;
+    height: 50%;
+}
+
+.rememberMe,
+.formSubmit {
+    width: 100%;
+    height: 12.5%;
+}
+
+.rememberMe input {
+    margin-right: 20px;
+    vertical-align: middle;
+}
+
+.formSubmit input {
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    background-color: rgb(33, 241, 231);
+    cursor: pointer;
+}
+
+.logoLoginContainer {
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    float: right;
+}
+
+.logoLoginContainer img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: drop-shadow(0px 0px 10px rgb(160, 160, 160));
+}
+
+.circleMenu {
+    position: fixed;
+    left: 2em;
+    bottom: 2em;
+}
+
+.circleMenu-link {
+    width: 3.5em;
+    height: 3.5em;
+    border-radius: 50%;
+    background-color: rgb(224, 0, 0);
+    color: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    box-shadow: 1px 3px 5px 0 rgba(0, 0, 0, .2);
+}
+
+.circleMenu-link:active {
+    box-shadow: 1px 3px 8px 2px rgba(0, 0, 0, .3);
+}
+
+.circleMenu-link i {
+    font-size: 18px;
+    line-height: 1.8;
+    transition: .5s ease;
+}
+
+.circleMenu.active .circleMenu-link i {
+    transform: rotate(-45deg);
+}
+
+.linksWrapper>a {
+    display: flex;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    font-size: 16px;
+    background-color: rgba(0, 0, 0, .1);
+    color: #fff;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    top: 5px;
+    left: 5px;
+    z-index: -1;
+    transition: .5s ease;
+}
+
+.linksWrapper>a:hover {
+    background-color: rgba(0, 0, 0, .3);
+}
+
+.circleMenu::after {
+    content: "";
+    width: 3em;
+    height: 3em;
+    background-color: rgb(255, 69, 36);
+    position: absolute;
+    z-index: -2;
+    border-radius: 50%;
+    top: 0;
+    left: 0;
+    transition: .5s;
+}
+
+.circleMenu.active::after {
+    transform: scale3d(5.5, 5.5, 5.1);
+}
+
+.circleMenu.active .linksWrapper>a:first-child {
+    top: -75px;
+    left: -14px;
+}
+
+.circleMenu.active .linksWrapper>a:nth-child(2) {
+    top: -66px;
+    left: 40px;
+}
+
+.circleMenu.active .linksWrapper>a:nth-child(3) {
+    top: -28px;
+    left: 75px;
+}
+
+.circleMenu.active .linksWrapper>a:last-child {
+    top: 22px;
+    left: 80px;
+}

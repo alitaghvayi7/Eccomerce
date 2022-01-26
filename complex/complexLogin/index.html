@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css">
+    <title>ثبت نام</title>
+</head>
+
+<body>
+    <div class="container">
+        <button id="changeMod" class="changeMod"><i class="fas fa-user-plus"></i></button>
+        <form action="" id="loginContainer" class="loginContainer" autocomplete="off">
+            <fieldset class="loginHeader">ورود از طریق شبکه های اجتماعی</fieldset>
+            <fieldset class="socialMedia">
+                <span class="socialMedia-item"><a href="#"><i class="fab fa-facebook-f"></i></a></span>
+                <span class="socialMedia-item"><a href="#"><i class="fab fa-twitter"></i></a></span>
+                <span class="socialMedia-item"><a href="#"><i class="fab fa-google-plus-g"></i></a></span>
+                <span class="socialMedia-item"><a href="#"><i class="fab fa-linkedin-in"></i></a></span>
+                <span class="socialMedia-item"><a href="#"><i class="fab fa-whatsapp"></i></a></span>
+                <span class="socialMedia-item"><a href="#"><i class="fab fa-telegram-plane"></i></a></span>
+                <span class="socialMedia-item"><a href="#"><i class="fab fa-instagram"></i></a></span>
+            </fieldset>
+            <fieldset class="login-email-input">
+                <input type="email" class="input" name="loginEmail" id="loginEmail" autofocus>
+                <label for="loginEmail"><i class="fas fa-user"></i>ایمیل</label>
+            </fieldset>
+            <fieldset class="login-password-input">
+                <input type="email" class="input" name="loginPassword" id="loginPassword">
+                <label for="loginPassword"><i class="fas fa-lock"></i>کلمه عبور</label>
+            </fieldset>
+            <fieldset class="login-remember-input">
+                <input type="checkbox" name="loginRemember" id="loginRemember">
+                <label for="loginRemember">مرا به خاطر بسپار</label>
+            </fieldset>
+            <fieldset class="login-submit-btn">
+                <input type="submit" value="ورود">
+            </fieldset>
+            <fieldset class="forgetPassword">
+                <a href="#">رمز عبور خود را فراموش کرده اید؟</a>
+            </fieldset>
+        </form>
+        <span id="bg-highlighter" class="bg-highlighter"></span>
+        <form action="" id="signupContainer" class="signupContainer" autocomplete="off">
+            <fieldset class="signupHeader">ورود از طریق شبکه های اجتماعی</fieldset>
+            <fieldset class="socialMedia">
+                <span class="socialMedia-item"><a href="#"><i class="fab fa-facebook-f"></i></a></span>
+                <span class="socialMedia-item"><a href="#"><i class="fab fa-twitter"></i></a></span>
+                <span class="socialMedia-item"><a href="#"><i class="fab fa-google-plus-g"></i></a></span>
+                <span class="socialMedia-item"><a href="#"><i class="fab fa-linkedin-in"></i></a></span>
+                <span class="socialMedia-item"><a href="#"><i class="fab fa-whatsapp"></i></a></span>
+                <span class="socialMedia-item"><a href="#"><i class="fab fa-telegram-plane"></i></a></span>
+                <span class="socialMedia-item"><a href="#"><i class="fab fa-instagram"></i></a></span>
+            </fieldset>
+            <fieldset class="signup-email-input">
+                <input type="email" class="input" name="signupEmail" id="signupEmail" autofocus>
+                <label for="signupEmail"><i class="fas fa-user"></i>ایمیل</label>
+            </fieldset>
+            <fieldset class="signup-password-input">
+                <input type="password" class="input" name="signupPassword" id="signupPassword">
+                <label for="signupPassword"><i class="fas fa-lock"></i>کلمه عبور</label>
+            </fieldset>
+            <fieldset class="signup-repeatpassword-input">
+                <input type="password" class="input" name="signupRe-Password" id="signupRe-Password">
+                <label for="signupRe-Password"><i class="fas fa-lock"></i>تکرار کلمه عبور</label>
+            </fieldset>
+            <fieldset class="signup-submit-btn">
+                <input type="submit" value="ثبت نام">
+            </fieldset>
+        </form>
+        <div class="circleMenu">
+            <button id="circleMenu-link" onclick="showMenu(this)" class="circleMenu-link"><i class="fas fa-plus"></i></button>
+            <nav class="linksWrapper">
+                <a href="../index.html" class="fa fa-home" title="Home"></a>
+                <a href="#" class="fa fa-user" title="User"></a>
+                <a href="#" class="fa fa-chart-pie" title="Chart"></a>
+                <a href="#" class="fa fa-cog" title="Setting"></a>
+            </nav>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        <script>
+            function showMenu(element) {
+            element.parentElement.classList.toggle('active');
+            }
+            $(document).ready(function() {
+                $("#changeMod").click(function() {
+                    if ($(this).children('.fas').hasClass('fa-user-plus')) {
+                        $(this).children('.fas').removeClass('fa-user-plus');
+                        $(this).children('.fas').addClass('fa-sign-in-alt');
+                        $(this).addClass('bg-white');
+                        showHighlight();
+                    } else {
+                        $(this).children('.fas').removeClass('fa-sign-in-alt');
+                        $(this).children('.fas').addClass('fa-user-plus');
+                        $(this).removeClass('bg-white');
+                        hideSignup();
+                    }
+                });
+
+                function showHighlight() {
+                    $('#bg-highlighter').show(500, showSignup);
+                }
+
+                function hideHighlight() {
+                    $('#bg-highlighter').hide(500);
+                }
+
+                function showSignup() {
+                    $('#signupContainer').fadeIn(300);
+                }
+
+                function hideSignup() {
+                    $('#signupContainer').fadeOut(300, hideHighlight);
+                }
+
+                $(".input").on('focus', function() {
+                    $(this).siblings('label').css({
+                        'transform': 'translateY(-35px)',
+                        'font-size': '12px'
+                    });
+                });
+
+                $('.input').on('blur', function() {
+                    if ($(this).val() == "") {
+                        $(this).siblings('label').css({
+                            'transform': 'translateY(0px)',
+                            'font-size': '14px'
+                        });
+                    }
+                });
+            })
+        </script>
+    </div>
+</body>
+
+</html>

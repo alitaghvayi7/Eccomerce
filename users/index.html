@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+
+<body style="height: auto;">
+    <div class="container-modal">
+    </div>
+    <div class="modal">
+        <div class="exclamation">
+            <i class="fas fa-exclamation-circle"></i>
+        </div>
+        <button id="closeModal" class="closeModal">
+            <i class="fas fa-times"></i>
+        </button>
+        <h4>آیا از حذف این کاربر اطمینان دارید ؟</h4>
+        <button id="closeModalBtn" class="closeModalBtn">خیر</button>
+        <button class="deleteUser deleteUserOnly">بله</button>
+    </div>
+    <div class="contextmenu">
+        <ul>
+            <li>رنگ ها</li>
+            <li class="aaa">#aaa</li>
+            <li class="bbb">#bbb</li>
+            <li class="ccc">#ccc</li>
+            <li class="ddd">#ddd</li>
+            <li class="eee">#eee</li>
+            <li class="fff">#fff</li>
+        </ul>
+    </div>
+    <div class="container-date"></div>
+    <div class="container-form">
+        <form action="" autocomplete="off">
+            <label for="name">نام دانش آموز : </label>
+            <input type="text" name="name" id="name" placeholder="لطفا نام را وارد کنید....">
+            <button id="add" type="submit">اضافه کردن</button>
+            <button id="delLastTurn" type="submit">پاک کردن نوبت اخر</button>
+        </form>
+    </div>
+    <div class="container-toast">
+        <div class="container">
+            <div class="toast">
+                <div class="green">
+                    <span class="success"></span>
+                </div>
+                <div class="content">
+                    <h5>عملیات موفق</h5>
+                    <p class="report">عملیات با موفقیت انجام شد</p>
+                </div>
+                <div class="logo">
+                    <button class="btn">
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+            <div class="toast">
+                <div class="red">
+                    <span class="success bg-red"></span>
+                </div>
+                <div class="content">
+                    <h5>خطا</h5>
+                    <p>نام نمی تواند خالی باشد !</p>
+                </div>
+                <div class="logo">
+                    <button class="btn">
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-table">
+        <table>
+            <caption>لیست دانش آموزان</caption>
+            <thead>
+                <tr>
+                    <th>ردیف</th>
+                    <th><i class="fa fa-arrows-v"></i> نام و نام خانوادگی <input type="text" name="filterName" id="filterName" placeholder="فیلتر کردن بر اساس نام ..."></th>
+                    <th><i class="fa fa-arrows-v"></i> نوبت <input type="text" name="filterAverage" id="filterAverage" placeholder="فیلتر کردن بر اساس نوبت..."></th>
+                    <th colspan="2">عملیات</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="2">تعداد دانش آموزان</td>
+                    <td id="countStudent" colspan="3">0</td>
+                </tr>
+                <tr>
+                    <td colspan="2">بالاترین نوبت : </td>
+                    <td id="maxTurn" colspan="3">0</td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+    <div class="arrow-up">
+        <img class="goTop" src="./fonts/arrow-up-icon-png-2.jpg" alt="">
+    </div>
+    <div class="circleMenu">
+        <button id="circleMenu-link" onclick="showMenu(this)" class="circleMenu-link"><i class="fas fa-plus"></i></button>
+        <nav class="linksWrapper">
+            <a href="../index.html" class="fa fa-home" title="Home"></a>
+            <a href="index.html" class="fa fa-user" title="User"></a>
+            <a href="#" class="fa fa-chart-pie" title="Chart"></a>
+            <a href="#" class="fa fa-cog" title="Setting"></a>
+        </nav>
+    </div>
+    <script src="js/index.js"></script>
+</body>
+
+</html>

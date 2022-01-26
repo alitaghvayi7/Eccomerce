@@ -1,0 +1,394 @@
+@font-face {
+    font-family: 'Vazir';
+    src: url(../assets/fonts/Vazir-Medium.eot) format('eot'), url(../assets/fonts/Vazir-Medium.woff) format('woff'), url(../assets/fonts/Vazir-Medium.woff2) format('woff2');
+    font-style: normal;
+    font-weight: normal;
+    font-size: medium;
+}
+
+* {
+    font-family: 'Vazir';
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    direction: rtl;
+}
+
+html {
+    width: 100vw;
+    height: 100vh;
+}
+
+body {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+}
+
+fieldset {
+    border: none;
+}
+
+input {
+    border: none;
+    outline: none;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+.container {
+    display: flex;
+    width: 850px;
+    height: 450px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px 5px rgba(0, 0, 0, .4);
+    overflow: hidden;
+    position: relative;
+}
+
+.contentWrapper {
+    width: 50%;
+    height: 100%;
+    float: right;
+    position: relative;
+    transition: .6s ease-in-out;
+    overflow: hidden;
+    left: 0;
+}
+
+.formsContainer {
+    width: 200%;
+    height: 100%;
+    position: absolute;
+    transition: .6s ease-in-out;
+    left: -100%;
+}
+
+.signUp {
+    width: 50%;
+    height: 100%;
+    float: right;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.logos {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.logo {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+    transition: .5s ease-out;
+}
+
+.logo a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.logo>i {
+    color: #000;
+    width: 100%;
+    height: 100%;
+    transition: .5s ease-out;
+}
+
+.logo:hover {
+    background-color: #000;
+}
+
+.logo:hover i {
+    color: #fff;
+}
+
+.input,
+.submit {
+    width: 100%;
+    height: 40px;
+    position: relative;
+    overflow: hidden;
+}
+
+.input>i {
+    color: rgb(156, 156, 156);
+    position: absolute;
+    display: block;
+    font-size: 14px;
+    top: 50%;
+    z-index: 1;
+    left: 10%;
+    cursor: pointer;
+}
+
+.input>input {
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding-right: 50px;
+    background-color: inherit;
+}
+
+label {
+    text-align: right;
+    padding-right: 45px;
+}
+
+.input span {
+    width: 72%;
+    margin: 25px 0 0 10px;
+    height: 2px;
+    background-color: rgb(54, 54, 54);
+    transition: .7s ease-in;
+    position: absolute;
+    left: 100%;
+    bottom: 0;
+    z-index: 1;
+}
+
+.input input:focus~span {
+    left: 15%;
+}
+
+.submit>input {
+    padding: 10px 40px;
+    background-color: rgb(14, 168, 14);
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.login {
+    width: 50%;
+    height: 100%;
+    float: right;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.login .submit>input {
+    padding: 10px 40px;
+    background-color: rgb(24, 161, 155);
+    border-radius: 5px;
+    color: #fff;
+}
+
+.overlayWrapper {
+    width: 50%;
+    height: 100%;
+    float: right;
+    position: relative;
+    transition: .6s ease-in-out;
+    z-index: 1;
+    left: 0;
+    overflow: hidden;
+}
+
+.overlayContainer {
+    width: 200%;
+    height: 100%;
+    background-image: linear-gradient(to right, #ff4b2b, #FF416c);
+    transition: .6s ease-in-out;
+    position: absolute;
+}
+
+.showLogin {
+    width: 50%;
+    height: 100%;
+    float: right;
+    background: transparent;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+.showSignUp {
+    width: 50%;
+    height: 100%;
+    float: right;
+    background: transparent;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+.btnCustum {
+    display: inline;
+    background-color: transparent;
+    padding: 5px 50px;
+    border: 1px solid #fff;
+    border-radius: 7px;
+    color: #fff;
+}
+
+#login:target~.contentWrapper {
+    left: -50%;
+}
+
+#login:target~.contentWrapper>.formsContainer {
+    left: 0;
+}
+
+#login:target~.overlayWrapper {
+    left: 50%;
+}
+
+#login:target~.overlayWrapper>.overlayContainer {
+    left: 0;
+}
+
+#signUp:target~.contentWrapper {
+    left: 0;
+}
+
+#signUp:target~.contentWrapper>.formsContainer {
+    left: -100%;
+}
+
+#signUp:target~.overlayWrapper {
+    left: 0;
+}
+
+#signUp:target~.overlayWrapper>.overlayContainer {
+    left: -100%;
+}
+
+.Home {
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: #000;
+}
+
+.Home a i {
+    color: #fff;
+    font-size: 26px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.circleMenu {
+    position: fixed;
+    left: 2em;
+    bottom: 2em;
+}
+
+.circleMenu-link {
+    width: 3.5em;
+    height: 3.5em;
+    border-radius: 50%;
+    background-color: rgb(224, 0, 0);
+    color: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    box-shadow: 1px 3px 5px 0 rgba(0, 0, 0, .2);
+}
+
+.circleMenu-link:active {
+    box-shadow: 1px 3px 8px 2px rgba(0, 0, 0, .3);
+}
+
+.circleMenu-link i {
+    font-size: 18px;
+    line-height: 1.8;
+    transition: .5s ease;
+}
+
+.circleMenu.active .circleMenu-link i {
+    transform: rotate(-45deg);
+}
+
+.linksWrapper>a {
+    display: flex;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    font-size: 16px;
+    background-color: rgba(0, 0, 0, .1);
+    color: #fff;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    top: 5px;
+    left: 5px;
+    z-index: -1;
+    transition: .5s ease;
+}
+
+.linksWrapper>a:hover {
+    background-color: rgba(0, 0, 0, .3);
+}
+
+.circleMenu::after {
+    content: "";
+    width: 3em;
+    height: 3em;
+    background-color: rgb(255, 69, 36);
+    position: absolute;
+    z-index: -2;
+    border-radius: 50%;
+    top: 0;
+    left: 0;
+    transition: .5s;
+}
+
+.circleMenu.active::after {
+    transform: scale3d(5.5, 5.5, 5.1);
+}
+
+.circleMenu.active .linksWrapper>a:first-child {
+    top: -75px;
+    left: -14px;
+}
+
+.circleMenu.active .linksWrapper>a:nth-child(2) {
+    top: -66px;
+    left: 40px;
+}
+
+.circleMenu.active .linksWrapper>a:nth-child(3) {
+    top: -28px;
+    left: 75px;
+}
+
+.circleMenu.active .linksWrapper>a:last-child {
+    top: 22px;
+    left: 80px;
+}

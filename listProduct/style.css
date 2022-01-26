@@ -1,0 +1,134 @@
+.categoryResult h6,
+.brands h6,
+.brandsCustomers h6 {
+    font-size: 14px;
+    color: rgba(0, 0, 0, .8);
+    font-weight: bold;
+}
+
+.categoryResult .nav-item>a {
+    font-size: 14px;
+    color: rgba(0, 0, 0, .8);
+    transition: .5s;
+}
+
+.categoryResult .nav-item>a:hover {
+    color: rgb(41, 173, 255);
+    transform: translateX(-3px);
+}
+
+.categoryResult .nav-item>div.collapsing .nav>a {
+    font-size: 13px;
+}
+
+.categoryResult .nav-item>div.collapse .nav>a {
+    font-size: 13px;
+}
+
+.categoryResult .nav-item>div.collapsing .nav>a i {
+    font-size: 11px;
+}
+
+.categoryResult .nav-item>div.collapse .nav>a i {
+    font-size: 11px;
+}
+
+.form-control:focus {
+    box-shadow: 0 0 0 2px rgb(0 123 255 / 25%);
+}
+
+.brands .form-check label.form-check-label,
+.brandsCustomers .form-check label.form-check-label {
+    font-size: 12px;
+    color: rgba(0, 0, 0, .5);
+}
+
+.express-send label.custom-control-label,
+.justExistMetal label.custom-control-label {
+    font-size: 13px;
+    color: rgba(0, 0, 0, .5);
+}
+
+.breadcrumb-item {
+    font-size: 14px;
+}
+
+.breadcrumb-item+.breadcrumb-item::before {
+    float: right;
+    margin-left: 10px;
+}
+
+.sortingBy span:first-child i,
+.sortingBy span:last-child {
+    font-size: 16px;
+    color: rgba(0, 0, 0, .5);
+}
+
+.sortingBy span:last-child {
+    font-size: 13px;
+}
+
+.sortingBy-items a {
+    font-size: 12px;
+    padding: 3px;
+    transition: .5s ease;
+    color: rgba(0, 0, 0, .5);
+    margin: 0 4px;
+}
+
+.sortingBy-items a:hover {
+    background-color: rgba(0, 0, 0, .1);
+}
+
+.sortingBy-items a.active {
+    background-color: lightseagreen!important;
+    color: #fff;
+}
+
+.custom-card-product {
+    transition: .5s;
+}
+
+.custom-card-product:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 0 8px 2px rgba(0, 0, 0, .1);
+}
+
+.custom-card-product-img {
+    width: 240px;
+    height: 200px;
+}
+
+.custom-card-product-body>p:first-child {
+    font-size: 13px;
+}
+
+.custom-card-product-body>p:nth-child(2)>span:first-child,
+.custom-card-product-body>p:nth-child(2)>span:last-child {
+    font-size: 12px;
+}
+
+.custom-card-product-body>p:nth-child(2)>span:first-child i {
+    font-size: 14px;
+}
+
+.custom-card-product-body>p:nth-child(3) {
+    font-size: 13px;
+}
+
+.custom-card-product-body>p:nth-child(3) i {
+    color: orange;
+    font-size: 16px;
+}
+
+.custom-card-product-body>p:nth-child(4) span {
+    font-size: 11px;
+}
+
+.custom-card-product-body>p:nth-child(4) s {
+    font-size: 13px;
+}
+
+.pagination>li {
+    font-size: 13px;
+}
